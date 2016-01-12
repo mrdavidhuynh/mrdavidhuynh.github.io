@@ -1,0 +1,385 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+html {
+overflow: -moz-scrollbars-vertical; 
+overflow-y: scroll;
+font-size: 62.5%;
+}
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color:#fff;
+	font-family:Oswald;
+	font-weight:300;
+	background: #0c0c0c url(../images/bg.jpg) repeat;
+}
+img {
+	width:auto;
+	height:auto;
+	max-width:100%;
+}
+a {
+	text-decoration:none;
+	color:#3CF;
+}
+h1 {
+	display:inline-block;
+	font-size:4.0rem;
+	font-family:Oswald;
+	font-weight: 700;
+	margin:10px 0 0 0;
+}
+h2 {
+	font-family:Oswald;
+	font-weight: 700;
+	font-size: 2.1rem;
+	margin-top:5px;
+	margin-bottom:6px;
+}
+h3 {
+	font-family:Oswald;
+	font-weight: 400;
+	font-size: 3.4rem;
+	margin-top:18px;
+	margin-bottom:6px;
+}
+h4 {
+	font-family:Oswald;
+	font-weight: 400;
+	font-size: 2.1rem;
+	margin-top:40px;
+	margin-bottom:6px;
+}
+p {
+	font-size:1.8rem;
+	font-weight: 300;
+	margin: 12px 0;
+}
+.off {
+	overflow:hidden;
+	max-height:0;
+}
+.unselected {
+	opacity: .6;
+}
+.unselected:hover {
+	opacity: 1;
+}
+
+/*-------------------------------------------------------------NAV*/
+
+nav {
+	height: 45px;
+	background:#fff;
+	position:fixed;
+	top:0;
+	z-index:999;
+	width:100%;
+	box-shadow: 0px -25px 64px #000;
+}
+@media screen and (max-width: 600px){
+
+nav {
+	position:relative;
+}
+	
+}
+nav .container {
+	max-width: 960px;
+	margin: 0 auto;
+	position:relative;
+	padding:0 14px;
+}
+@media screen and (min-width: 1367px){
+
+nav .container {
+	max-width: 1100px;
+}
+	
+}
+
+nav #title {
+	height:100%;
+	display:inline-block;
+	float:left;
+}
+nav #title #logo {
+	width: 96px;
+	margin-right:20px;
+	float:left;
+	background:url(../images/title_logo_bg.png) no-repeat;
+	background-size:contain;
+}
+@media screen and (max-width: 550px){
+
+nav #title #logo {
+	width: 82px;
+	margin-right:20px;
+	margin-top:3px;
+}
+	
+}
+@media screen and (max-width: 300px){
+
+nav #title #logo {
+	width: 51px;
+	margin-right:4px;
+	margin-top:6px;
+}
+	
+}
+nav #title .nav-button {
+	float:left;
+	height:21px;
+	text-align:center;
+	margin-top:11px;
+	cursor:pointer;
+}
+nav #title .nav-button .label{
+	color:#000;
+	font-size:1.9rem;
+	font-family:Oswald;
+	font-weight: 700;
+	margin-right:24px;
+	display:inline-block;
+}
+@media screen and (max-width: 550px){
+
+nav #title .nav-button .label{
+	display:none;
+	margin-right:0px;
+}
+	
+}
+nav #title .nav-button img {
+	height: 100%;
+	width:auto;
+	margin: 0 10px;
+}
+@media screen and (max-width: 550px){
+
+nav #title .nav-button img {
+	margin: 0 8px;
+}
+	
+}
+@media screen and (max-width: 300px){
+
+nav #title .nav-button img {
+	margin: 0 7px;
+}
+	
+}
+nav #contact {
+	height:45px;
+	display:inline-block;
+	float:right;
+	cursor:pointer;
+}
+@media screen and (max-width: 550px){
+
+nav #contact{
+	float:left;
+}
+	
+}
+nav #contact img {
+	height: 100%;
+	width:auto;
+	margin-left:7px;
+}
+@media screen and (max-width: 550px){
+
+nav #contact img {
+	margin-left:3px;
+}
+	
+}
+/*--------------------------------------------------------------SPOTLIGHT*/
+
+#spotlight {
+	max-width:100%;
+	clear:both;
+}
+
+#spotlight .container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 110px 20px 0px 20px;
+	position:relative;
+}
+@media screen and (max-width: 600px){
+#spotlight .container {
+	top: -83px;
+}
+}
+@media screen and (min-width: 1367px){
+
+#spotlight .container {
+	max-width: 1100px;
+}
+	
+}
+@media screen and (max-width: 990px){
+
+#spotlight .container {
+	padding: 90px 20px 0px 20px;
+}
+	
+}
+
+/*--------------------------------------------THUMBNAILS*/ 
+
+#spotlight #thumbnails {
+	text-align:justify;
+}
+
+#spotlight #thumbnails div{
+	display:inline-block;
+	vertical-align:middle;
+	position:relative;
+	width: 24.5%;
+	height: 24.5%;
+	margin: 0 0 .5% 0;
+}
+
+@media screen and (max-width: 900px){
+
+#spotlight #thumbnails div{
+	width: 32.8%;
+	height: 32.8%;
+}
+
+}
+
+@media screen and (max-width: 600px){
+	
+#spotlight #thumbnails div{
+	width: 49.4%;
+	height: 49.4%;
+}
+
+}
+#spotlight #thumbnails div .headline{
+	width:90%;
+	height:90%;
+	position:absolute;
+	top:0;
+	background: url(../images/thumb-shadow.png) repeat-x top;
+	padding:5%;
+	font-size:2.1rem;
+	font-weight: 400;
+	color:#fff;
+	opacity:0;
+	text-align:left;
+}
+
+/*--------------------------------------------ABOUT+EMAIL*/
+
+#spotlight #about,#email {
+	display:none;
+	padding:0 10px 40px 10px;
+}
+
+#spotlight p {
+	max-width: 700px;
+}
+#spotlight .email-p {
+	margin: 0 auto;
+}
+#spotlight h4 {
+	margin: 10px auto;
+	width: 96px;
+	font-size: 1.2rem;
+}
+#spotlight .row{
+	max-width:100%;
+	margin-bottom:32px;
+}
+#spotlight .block1{
+	display:inline-block;
+	vertical-align:bottom;	
+	background: #191919;
+	height:140px;
+	width:150px;
+	margin-right:5px;
+	margin-bottom:7px;
+	text-align:center;
+}
+@media screen and (max-width: 700px){
+	
+#spotlight .block1{
+	height:110px;
+	width:100px;
+}
+
+}
+#spotlight .icon {
+	width:auto;
+	height:auto;
+	max-height:45px;
+	margin-top:30px;
+}
+@media screen and (max-width: 700px){
+	
+#spotlight .icon {
+	max-height:30px;
+	margin-top:22px;
+}
+
+}
+
+/*----------------------------------------------------------------------------------PAGE*/
+
+#page {
+	color:#000;
+	margin: 110px 20px 20px 20px;
+}
+
+@media screen and (max-width: 990px){
+
+#page {
+	margin: 90px 20px 20px 20px;
+}
+	
+}
+#page .container {
+	background:#FFF;
+	max-width: 900px; 
+	margin: 0 auto;
+	position:relative;
+	padding: 25px 30px;
+}
+@media screen and (max-width: 600px){
+#page .container {
+	top: -85px;
+}
+}
+@media screen and (min-width: 1367px){
+
+#page .container {
+	max-width: 940px;
+	padding-right:130px;
+}
+
+}
+#page .full{
+	width:100%;
+	margin: 20px 0;
+}
+
+#page .bordered {
+	border: #CCC solid 1px;
+}
+#page .half{
+	width:49.5%;
+	margin: 1px 0;
+}
+@media screen and (max-width: 600px){
+
+#page .half{
+	width:100%;
+}
+
+}

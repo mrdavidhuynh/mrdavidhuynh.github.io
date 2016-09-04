@@ -149,8 +149,6 @@
 }
 @media screen and (min-width: 680px) {
   .Works-preview {
-    display: -webkit-flex;
-    -webkit-align-items: center;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -158,6 +156,7 @@
 }
 @media screen and (min-width: 960px) {
   .Works-preview {
+    align-items: flex-start;
     margin: 21.5% 0;
   }
   .Works-preview--az, .Works-preview--plume, .Works-preview--ht  {
@@ -184,18 +183,19 @@
     max-width: 100%;
     cursor: pointer;
     padding-left: 0;
+    top: 32%;
     left: 0;
   }
   .Works-description--tl {
-    margin-top: 7rem;
+    top: 56%;
     left: 28.4%;
   }
   .Works-description--plume {
-    margin-top: 3.2rem;
     left: 42.3%;
+    top: 45%;
   }
   .Works-description--routific {
-    margin-top: 4rem;
+    top: 46%;
     left: 71%;
   }
 }

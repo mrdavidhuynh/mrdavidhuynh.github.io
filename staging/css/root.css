@@ -1,0 +1,26 @@
+/* --- root */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-family: 'R', serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  background: url('../img/bg-lines.png') #290d57 repeat top center;
+  background-size: 50% auto;
+  color: white;
+}
+@media screen and (min-width: 680px) {
+  body {
+    background-size: 15% auto;
+  }
+}
+@media screen and (min-width: 960px) {
+  body {
+    background-size: 20% auto;
+  }
+}

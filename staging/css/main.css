@@ -149,9 +149,11 @@
 }
 @media screen and (min-width: 680px) {
   .Works-preview {
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
+    flex-direction: row-reverse;
   }
 }
 @media screen and (min-width: 960px) {
@@ -182,6 +184,7 @@
     max-width: 100%;
     cursor: pointer;
     padding-left: 0;
+    left: 0;
   }
   .Works-description--tl {
     margin-top: 7rem;
@@ -194,9 +197,6 @@
   .Works-description--routific {
     margin-top: 4rem;
     left: 71%;
-  }
-  .Works-description--ht {
-    left: 0;
   }
 }
 

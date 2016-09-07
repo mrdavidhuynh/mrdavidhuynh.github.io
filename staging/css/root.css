@@ -10,19 +10,19 @@ body {
   font-size: 1.6rem;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
-  background: url('../img/bg-lines.png') #290d57 repeat top center;
-  background-size: 50% auto;
+  background: #290d57;
   color: white;
 }
-@media screen and (min-width: 680px) {
-  body {
-    background-size: 15% auto;
-  }
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 2;
 }
-@media screen and (min-width: 960px) {
-  body {
-    background-size: 20% auto;
-  }
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* --- headings */

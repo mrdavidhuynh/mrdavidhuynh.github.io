@@ -33,8 +33,8 @@
 }
 @media screen and (min-width: 1320px) {
   .Pattern {
-    width: 163rem;
-    margin-left: -81.5rem;
+    width: 168rem;
+    margin-left: -84rem;
   }
 }
 
@@ -79,7 +79,7 @@
 @media screen and (min-width: 1320px) {
   .Container {
     padding: 18rem 0 6rem;
-    max-width: 95rem;
+    max-width: 98rem;
   }
 }
 
@@ -105,7 +105,7 @@
 @media screen and (min-width: 960px) {
   .Nav {
     position: fixed;
-    z-index: 4;
+    z-index: 99;
     top: 0;
   }
 }
@@ -277,19 +277,19 @@
 }
 @media screen and (min-width: 960px) {
   .Works-title {
-    font-size: 6.2rem;
+    font-size: 6.4rem;
   }
   .Works-title-sm {
-    font-size: 5rem;
+    font-size: 5.2rem;
     padding: 0;
   }
 }
 @media screen and (min-width: 1320px) {
   .Works-title {
-    font-size: 7.3rem;
+    font-size: 7.7rem;
   }
   .Works-title-sm {
-    font-size: 5.8rem;
+    font-size: 6.4rem;
     padding: 0;
   }
 }
@@ -584,6 +584,7 @@
   width: 100%;
   margin-bottom: 1.5rem;
   text-shadow: 0 0 4rem rgba(15,2,36,.6);
+  z-index: 2;
 }
 @media screen and (min-width: 680px) {
   .Info-describe {
@@ -642,8 +643,21 @@
 
 .Info-pic {
   width: 100%;
+  position: relative;
   padding-top: 55%;
   margin-bottom: 1.5rem;
+}
+.Info-pic::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -12.5%;
+  left: -16%;
+  width: 132%;
+  height: 100%;
+  background: url('../img/shadow-wide.png') bottom center no-repeat;
+  background-size: contain;
+  z-index: -1;
 }
 .Info-pic--van {
   background: url('../img/info-vancouver.png') top left;
@@ -658,9 +672,6 @@
   background-size: cover;
 }
 @media screen and (min-width: 680px) {
-  .Info-pic {
-    box-shadow: 0 0 11rem rgba(0,0,0,.3);
-  }
   .Info-pic--van {
     padding-top: 64.5%;
   }

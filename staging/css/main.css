@@ -8,10 +8,6 @@
   top: 0;
   left: 50%;
   margin-left: -20.75rem;
-  /*background: -webkit-linear-gradient(#292058, #a10263, #e57c37);  For Safari 5.1 to 6.0
-  background: -o-linear-gradient(#292058, #a10263, #e57c37); For Opera 11.1 to 12.0
-  background: -moz-linear-gradient(#292058, #a10263, #d85165);  For Firefox 3.6 to 15*/
-  background: linear-gradient(#350759, #3e0660);
 }
 @media screen and (min-width: 410px) {
   .Pattern {

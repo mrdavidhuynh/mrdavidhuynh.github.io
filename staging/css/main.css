@@ -49,36 +49,6 @@
   background-color: #fff;
 }
 
-/* --- container */
-
-.Container {
-  max-width: 24rem;
-  padding: 3rem 0;
-  margin: 0 auto;
-}
-@media screen and (min-width: 410px) {
-  .Container {
-    max-width: 32rem;
-  }
-}
-@media screen and (min-width: 680px) {
-  .Container {
-    max-width: 58.5rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Container {
-    padding: 18rem 0 6rem;
-    max-width: 81rem;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .Container {
-    padding: 18rem 0 6rem;
-    max-width: 98rem;
-  }
-}
-
 /* --- nav */
 
 .Nav {
@@ -194,6 +164,34 @@
 }
 
 /* --- Works */
+
+.Works {
+  max-width: 24rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+@media screen and (min-width: 410px) {
+  .Works {
+    max-width: 32rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Works {
+    max-width: 58.5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Works {
+    padding: 18rem 0 6rem;
+    max-width: 81rem;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Works {
+    padding: 18rem 0 6rem;
+    max-width: 98rem;
+  }
+}
 
 .Works-preview {
   display: flex;
@@ -507,188 +505,188 @@
 
 /* --- Info */
 
+.Info {
+  max-width: 30rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+@media screen and (min-width: 410px) {
+  .Info {
+    max-width: 32rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Info {
+    max-width: 58.5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Info {
+    padding: 20rem 0 12rem;
+    max-width: 81rem;
+  }
+}
+
+
 .Info-header {
-  margin-bottom: 4.5rem;
+  font-size: 3.8rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+  text-align: center;
 }
 @media screen and (min-width: 680px) {
   .Info-header {
-    padding-top: 1rem;
-    margin-bottom: 9rem;
+    margin-top: 3rem;
+    font-size: 7rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-header {
-    padding-top: 0;
+    font-size: 9.2rem;
+  }
+}
+
+.Info-headerSub {
+  font-size: 2.1rem;
+  line-height: 1.4;
+  margin: 0 0 7.5rem;
+  text-align: center;
+  color: #9a5dff;
+}
+@media screen and (min-width: 680px) {
+  .Info-headerSub {
+    font-size: 3rem;
+    margin-bottom: 18rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Info-headerSub {
+    font-size: 4rem;
+    margin-bottom: 24rem;
+  }
+}
+
+.Info-icon {
+  color: #9a5dff;
+}
+
+.Info-section {
+  padding-left: 33%;
+  margin-bottom: 9rem;
+  position: relative;
+}
+@media screen and (min-width: 410px) {
+  .Info-section {
+    padding-left: 40%;
     margin-bottom: 11rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Info-section {
+    padding-left: 42.75%;
+    margin-bottom: 28rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Info-section {
+    margin-bottom: 22rem;
+  }
+}
+
+.Info-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  z-index: -1;
+}
+.Info-img--vancouver {
+  background: url('../img/info-img1.png') no-repeat;
+  background-size: contain;
+  padding-top: 56%;
+  left: 1rem;
+}
+@media screen and (min-width: 410px) {
+  .Info-img--vancouver {
+    padding-top: 68%;
+    left: -3rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Info-img--vancouver {
+    padding-top: 62%;
+    top: -4.2rem;
+    left: -1.2rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Info-img--vancouver {
+    padding-top: 60%;
+    top: -6rem;
+    left: -.5rem;
+  }
+}
+.Info-img--sfu {
+  background: url('../img/info-img2.png') no-repeat;
+  background-size: contain;
+  padding-top: 60%;
+  left: -1.5rem;
+}
+@media screen and (min-width: 410px) {
+  .Info-img--sfu {
+    padding-top: 74%;
+    left: -5.2rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Info-img--sfu {
+    top: -7rem;
+    padding-top: 72%;
+    left: -5.2rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Info-img--sfu {
+    padding-top: 66%;
+    top: -1rem;
   }
 }
 
 .Info-title {
-  font-size: 2.4rem;
-  line-height: 1.4;
-  margin-bottom: .5rem;
+  font-size: 3rem;
+  line-height: 1.2;
 }
 @media screen and (min-width: 680px) {
   .Info-title {
-    font-size: 3.4rem;
-    text-align: center;
-    font-weight: bold;
+    font-size: 4.8rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-title {
-    font-size: 4.2rem;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .Info-title {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 
 .Info-subtitle {
-  font-size: 2rem;
-  line-height: 1.3;
-  color: #bd31d2;
-  opacity: .66;
-  font-weight: normal;
-  letter-spacing: 0.07rem;
+  font-size: 2.1rem;
+  line-height: 1.4;
+  padding: 3rem 0 .5rem;
+  color: #9a5dff;
+}
+@media screen and (min-width: 410px) {
+  .Info-subtitle {
+    padding-top: 6rem
+  }
 }
 @media screen and (min-width: 680px) {
   .Info-subtitle {
-    font-size: 2.4rem;
-    text-align: center;
-  }
-}
-
-.Info-section {
-  margin-bottom: 5rem;
-  position: relative;
-}
-@media screen and (min-width: 680px) {
-  .Info-section {
-    margin-bottom: 10rem;
+    font-size: 2.7rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .Info-section {
-    margin-bottom: 15rem;
-  }
-}
-
-.Info-describe {
-  width: 100%;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 0 4rem rgba(15,2,36,.6);
-  z-index: 2;
-}
-@media screen and (min-width: 680px) {
-  .Info-describe {
-    position: absolute;
-    left: 0;
-    text-align: left;
-  }
-  .Info-describe--van {
-    top: 32%;
-    left: 36.4%;
-  }
-  .Info-describe--sfu {
-    top: 34%;
-    left: 9%;
-    max-width: 75%;
-  }
-  .Info-describe--az {
-    top: 26%;
-    left: 29%;
-    max-width: 78%;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Info-describe--van {
-    left: 42%;
-  }
-  .Info-describe--sfu {
-    left: 14%;
-  }
-}
-
-.Info-group {
-  width: 100%;
-}
-@media screen and (min-width: 680px) {
-  .Info-group--van {
-    width: 71.5%;
-  }
-  .Info-group--sfu {
-    width: 54%;
-    margin-left: 37%;
-  }
-  .Info-group--az {
-    width: 45%;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Info-group--sfu {
-    width: 57%;
-    margin-left: 42.7%;
-  }
-  .Info-group--az {
-    width: 43%;
-  }
-}
-
-.Info-pic {
-  width: 100%;
-  position: relative;
-  padding-top: 55%;
-  margin-bottom: 1.5rem;
-}
-.Info-pic::after {
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: -12.5%;
-  left: -16%;
-  width: 132%;
-  height: 100%;
-  background: url('../img/shadow-wide.png') bottom center no-repeat;
-  background-size: contain;
-  z-index: -1;
-}
-.Info-pic--van {
-  background: url('../img/info-vancouver.png') top left;
-  background-size: cover;
-}
-.Info-pic--sfu {
-  background: url('../img/info-sfu.png') bottom center;
-  background-size: cover;
-}
-.Info-pic--az {
-  background: url('../img/info-az.png') top left;
-  background-size: cover;
-}
-@media screen and (min-width: 680px) {
-  .Info-pic--van {
-    padding-top: 64.5%;
-  }
-  .Info-pic--sfu {
-    padding-top: 100%;
-  }
-  .Info-pic--az {
-    padding-top: 130%;
-  }
-}
-
-.Info-label {
-  font-size: 2rem;
-  line-height: 1.3;
-  color: #bd31d2;
-  opacity: .66;
-  font-weight: normal;
-  letter-spacing: 0.07rem;
-}
-@media screen and (min-width: 960px) {
-  .Info-label {
-    font-size: 2.2rem;
+  .Info-subtitle {
+    font-size: 3.2rem;
+    padding-top: 14rem;
   }
 }

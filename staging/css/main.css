@@ -50,6 +50,36 @@
   background-color: #fff;
 }
 
+/* --- container */
+
+.Container {
+  max-width: 24rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+@media screen and (min-width: 410px) {
+  .Container {
+    max-width: 32rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Container {
+    max-width: 58.5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Container {
+    padding: 18rem 0 6rem;
+    max-width: 81rem;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Container {
+    padding: 18rem 0 6rem;
+    max-width: 98rem;
+  }
+}
+
 /* --- nav */
 
 .Nav {
@@ -165,34 +195,6 @@
 }
 
 /* --- Works */
-
-.Works {
-  max-width: 24rem;
-  padding: 3rem 0;
-  margin: 0 auto;
-}
-@media screen and (min-width: 410px) {
-  .Works {
-    max-width: 32rem;
-  }
-}
-@media screen and (min-width: 680px) {
-  .Works {
-    max-width: 58.5rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Works {
-    padding: 18rem 0 6rem;
-    max-width: 81rem;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .Works {
-    padding: 18rem 0 6rem;
-    max-width: 98rem;
-  }
-}
 
 .Works-preview {
   display: flex;
@@ -506,29 +508,6 @@
 
 /* --- Info */
 
-.Info {
-  max-width: 30rem;
-  padding: 3rem 0;
-  margin: 0 auto;
-}
-@media screen and (min-width: 410px) {
-  .Info {
-    max-width: 32rem;
-  }
-}
-@media screen and (min-width: 680px) {
-  .Info {
-    max-width: 58.5rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Info {
-    padding: 20rem 0 0;
-    max-width: 81rem;
-  }
-}
-
-
 .Info-header {
   font-size: 3.8rem;
   line-height: 1.4;
@@ -548,7 +527,7 @@
 }
 
 .Info-headerSub {
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   line-height: 1.4;
   margin: 0 0 7.5rem;
   text-align: center;
@@ -557,13 +536,13 @@
 @media screen and (min-width: 680px) {
   .Info-headerSub {
     font-size: 3rem;
-    margin-bottom: 18rem;
+    margin-bottom: 14rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-headerSub {
     font-size: 4rem;
-    margin-bottom: 26rem;
+    margin-bottom: 20rem;
   }
 }
 
@@ -572,170 +551,95 @@
 }
 
 .Info-section {
-  padding-left: 33%;
-  margin-bottom: 9rem;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15% 12%;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
-@media screen and (min-width: 410px) {
+.Info-section--vancouver {
+  background: url('../img/img-info-1.jpg') no-repeat;
+  background-size: cover;
+}
+.Info-section--sfu {
+  background: url('../img/img-info-2.png') no-repeat;
+  background-size: cover;
+}
+.Info-section--az {
+  background: url('../img/img-info-3.jpg') no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 680px) {
   .Info-section {
-    padding-left: 40%;
-    margin-bottom: 11rem;
+    margin-bottom: 4.5rem;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 1320px) {
   .Info-section {
-    padding-left: 42.75%;
-    margin-bottom: 28rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Info-section {
-    margin-bottom: 25rem;
-  }
-}
-
-.Info-img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
-  z-index: -1;
-}
-.Info-img--vancouver {
-  background: url('../img/info-img1.png') no-repeat;
-  background-size: contain;
-  padding-top: 56%;
-  left: 1rem;
-}
-@media screen and (min-width: 410px) {
-  .Info-img--vancouver {
-    padding-top: 68%;
-
-  }
-}
-@media screen and (min-width: 680px) {
-  .Info-img--vancouver {
-    padding-top: 64%;
-    top: -27%;
-    left: 1.6rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Info-img--vancouver {
-    top: -18%;
-  }
-}
-.Info-img--sfu {
-  background: url('../img/info-img2.png') no-repeat;
-  background-size: contain;
-  padding-top: 60%;
-  left: -1.5rem;
-}
-@media screen and (min-width: 410px) {
-  .Info-img--sfu {
-    padding-top: 74%;
-    left: -4.5rem;
-  }
-}
-@media screen and (min-width: 680px) {
-  .Info-img--sfu {
-    top: -7.5rem;
-    padding-top: 70%;
-    left: -5.2rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Info-img--sfu {
-    padding-top: 62%;
-    top: -2rem;
-  }
-}
-.Info-img--az {
-  background: url('../img/info-img3.png') no-repeat;
-  background-size: contain;
-  padding-top: 100%;
-  left: -7%;
-}
-@media screen and (min-width: 410px) {
-  .Info-img--az {
-    top: 2rem;
-    left: -4.2rem;
-  }
-}
-@media screen and (min-width: 680px) {
-  .Info-img--az {
-    top: -3.6rem;
-    left: -7rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Info-img--az {
-    top: 3rem;
-    left: -9rem;
+    padding: 15% 14%;
   }
 }
 
 .Info-badge {
-  position: absolute;
-  left: 2rem;
-  top: 7rem;
-  margin: auto;
-  max-width: 6rem;
-}
-@media screen and (min-width: 410px) {
-  .Info-badge {
-    max-width: 7.5rem;
-    left: 2.5rem;
-    top: 9rem;
-  }
+  max-width: 9rem;
+  margin: 0 auto 2rem;
 }
 @media screen and (min-width: 680px) {
   .Info-badge {
-    max-width: 11rem;
-    left: 19%;
-    top: 47%;
+    max-width: 14rem;
+    margin-bottom: 4.5rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-badge {
-    max-width: 15rem;
-    left: 19%;
-    top: 55%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Info-badge {
+    max-width: 17rem;
+  }
+}
+
+.Info-text {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  .Info-text {
+    width: 66%;
+    text-align: left;
+    margin-left: 6rem;
   }
 }
 
 .Info-title {
-  font-size: 3rem;
+  font-size: 2.6rem;
   line-height: 1.2;
+  margin: .6rem 0;
 }
 @media screen and (min-width: 680px) {
   .Info-title {
-    font-size: 4.8rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-title {
-    font-size: 7rem;
+    font-size: 6.5rem;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Info-title {
+    font-size: 7.2rem;
   }
 }
 
 .Info-subtitle {
-  font-size: 2.1rem;
-  line-height: 1.4;
-  padding: 3rem 0 .5rem;
+  font-size: 1.9rem;
+  line-height: 1.5;
   color: #9a5dff;
-}
-.Info-subtitle--bottom {
-  padding-top: 1rem;
-}
-@media screen and (min-width: 410px) {
-  .Info-subtitle {
-    padding-top: 6rem
-  }
-  .Info-subtitle--bottom {
-    padding-top: 1rem;
-  }
 }
 @media screen and (min-width: 680px) {
   .Info-subtitle {
@@ -745,9 +649,4 @@
 @media screen and (min-width: 960px) {
   .Info-subtitle {
     font-size: 3.2rem;
-    padding-top: 14rem;
-  }
-  .Info-subtitle--bottom {
-    padding-top: 1rem;
-  }
 }

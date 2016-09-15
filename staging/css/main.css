@@ -8,6 +8,7 @@
   top: 0;
   left: 50%;
   margin-left: -20.75rem;
+  opacity: .025;
 }
 @media screen and (min-width: 410px) {
   .Pattern {
@@ -19,6 +20,7 @@
   .Pattern {
     width: 100rem;
     margin-left: -50rem;
+    opacity: .05;
   }
 }
 @media screen and (min-width: 960px) {
@@ -40,7 +42,6 @@
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
-  opacity: .05;
 }
 
 .Pattern-line {
@@ -522,7 +523,7 @@
 }
 @media screen and (min-width: 960px) {
   .Info {
-    padding: 20rem 0 12rem;
+    padding: 20rem 0 0;
     max-width: 81rem;
   }
 }
@@ -589,7 +590,7 @@
 }
 @media screen and (min-width: 960px) {
   .Info-section {
-    margin-bottom: 26rem;
+    margin-bottom: 25rem;
   }
 }
 
@@ -610,21 +611,19 @@
 @media screen and (min-width: 410px) {
   .Info-img--vancouver {
     padding-top: 68%;
-    left: -3rem;
+
   }
 }
 @media screen and (min-width: 680px) {
   .Info-img--vancouver {
-    padding-top: 62%;
-    top: -4.2rem;
-    left: -1.2rem;
+    padding-top: 64%;
+    top: -27%;
+    left: 1.6rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-img--vancouver {
-    padding-top: 60%;
-    top: -6rem;
-    left: -.5rem;
+    top: -18%;
   }
 }
 .Info-img--sfu {
@@ -636,45 +635,73 @@
 @media screen and (min-width: 410px) {
   .Info-img--sfu {
     padding-top: 74%;
-    left: -5.2rem;
+    left: -4.5rem;
   }
 }
 @media screen and (min-width: 680px) {
   .Info-img--sfu {
     top: -7.5rem;
-    padding-top: 72%;
+    padding-top: 70%;
     left: -5.2rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-img--sfu {
-    padding-top: 66%;
+    padding-top: 62%;
     top: -2rem;
   }
 }
 .Info-img--az {
   background: url('../img/info-img3.png') no-repeat;
   background-size: contain;
-  padding-top: 90%;
-  left: -3.6rem;
+  padding-top: 100%;
+  left: -7%;
 }
 @media screen and (min-width: 410px) {
   .Info-img--az {
-    padding-top: 100%;
     top: 2rem;
-    left: -7.2rem;
+    left: -4.2rem;
   }
 }
 @media screen and (min-width: 680px) {
   .Info-img--az {
     top: -3.6rem;
-    left: -9rem;
+    left: -7rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-img--az {
     top: 3rem;
-    left: -12rem;
+    left: -9rem;
+  }
+}
+
+.Info-badge {
+  position: absolute;
+  left: 2rem;
+  top: 7rem;
+  margin: auto;
+  max-width: 6rem;
+}
+@media screen and (min-width: 410px) {
+  .Info-badge {
+    max-width: 7.5rem;
+    left: 2.5rem;
+    top: 9rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Info-badge {
+    max-width: 11rem;
+    left: 19%;
+    top: 47%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Info-badge {
+    max-width: 15rem;
+    left: 19%;
+    top: 55%;
   }
 }
 

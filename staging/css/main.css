@@ -562,7 +562,7 @@
 @media screen and (min-width: 960px) {
   .Info-headerSub {
     font-size: 4rem;
-    margin-bottom: 24rem;
+    margin-bottom: 26rem;
   }
 }
 
@@ -589,7 +589,7 @@
 }
 @media screen and (min-width: 960px) {
   .Info-section {
-    margin-bottom: 22rem;
+    margin-bottom: 26rem;
   }
 }
 
@@ -641,7 +641,7 @@
 }
 @media screen and (min-width: 680px) {
   .Info-img--sfu {
-    top: -7rem;
+    top: -7.5rem;
     padding-top: 72%;
     left: -5.2rem;
   }
@@ -649,7 +649,32 @@
 @media screen and (min-width: 960px) {
   .Info-img--sfu {
     padding-top: 66%;
-    top: -1rem;
+    top: -2rem;
+  }
+}
+.Info-img--az {
+  background: url('../img/info-img3.png') no-repeat;
+  background-size: contain;
+  padding-top: 90%;
+  left: -3.6rem;
+}
+@media screen and (min-width: 410px) {
+  .Info-img--az {
+    padding-top: 100%;
+    top: 2rem;
+    left: -7.2rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Info-img--az {
+    top: -3.6rem;
+    left: -9rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Info-img--az {
+    top: 3rem;
+    left: -12rem;
   }
 }
 
@@ -674,9 +699,15 @@
   padding: 3rem 0 .5rem;
   color: #9a5dff;
 }
+.Info-subtitle--bottom {
+  padding-top: 1rem;
+}
 @media screen and (min-width: 410px) {
   .Info-subtitle {
     padding-top: 6rem
+  }
+  .Info-subtitle--bottom {
+    padding-top: 1rem;
   }
 }
 @media screen and (min-width: 680px) {
@@ -688,5 +719,8 @@
   .Info-subtitle {
     font-size: 3.2rem;
     padding-top: 14rem;
+  }
+  .Info-subtitle--bottom {
+    padding-top: 1rem;
   }
 }

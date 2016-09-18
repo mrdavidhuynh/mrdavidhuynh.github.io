@@ -1,0 +1,19 @@
+<svg id="social-email" xmlns="http://www.w3.org/2000/svg" width="32.895" height="21.3" viewBox="0 0 65.79 42.6">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3.6px;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="social-email-2" data-name="social-email" class="cls-1" x="1.8" y="1.8" width="62" height="39" rx="6" ry="6"/>
+  <path class="cls-2" d="M2722,263l28,22,29-22" transform="translate(-2717.2 -259.2)"/>
+  <path class="cls-2" d="M2741,281l-17,17" transform="translate(-2717.2 -259.2)"/>
+  <path id="Shape_3_copy" data-name="Shape 3 copy" class="cls-2" d="M2761,279l18,18" transform="translate(-2717.2 -259.2)"/>
+</svg>

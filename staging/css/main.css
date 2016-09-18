@@ -1,3 +1,33 @@
+/* --- container */
+
+.Container {
+  max-width: 24rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+@media screen and (min-width: 410px) {
+  .Container {
+    max-width: 32rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Container {
+    max-width: 58.5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Container {
+    padding: 18rem 0 6rem;
+    max-width: 81rem;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Container {
+    padding: 18rem 0 6rem;
+    max-width: 98rem;
+  }
+}
+
 /* --- pattern */
 
 .Pattern {
@@ -48,36 +78,6 @@
   width: 1px;
   height: 100%;
   background-color: #fff;
-}
-
-/* --- container */
-
-.Container {
-  max-width: 24rem;
-  padding: 3rem 0;
-  margin: 0 auto;
-}
-@media screen and (min-width: 410px) {
-  .Container {
-    max-width: 32rem;
-  }
-}
-@media screen and (min-width: 680px) {
-  .Container {
-    max-width: 58.5rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Container {
-    padding: 18rem 0 6rem;
-    max-width: 81rem;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .Container {
-    padding: 18rem 0 6rem;
-    max-width: 98rem;
-  }
 }
 
 /* --- nav */
@@ -330,12 +330,12 @@
   color: #d43772;
 }
 .Works-frame--tl {
-  background-color: #319dcf;
-  color: #319dcf;
+  background-color: #269ed5;
+  color: #269ed5;
 }
 .Works-frame--plume {
-  background-color: #907fea;
-  color: #907fea;
+  background-color: #9988f0;
+  color: #9988f0;
 }
 .Works-frame--routific {
   background-color: #0b9785;
@@ -394,7 +394,7 @@
     bottom: -7.4%;
   }
   .Works-frame--az::after, .Works-frame--plume::after, .Works-frame--ht::after {
-    bottom: -13%;
+    bottom: -12.5%;
   }
 }
 
@@ -525,6 +525,11 @@
     font-size: 9.2rem;
   }
 }
+@media screen and (min-width: 1320px) {
+  .Info-header {
+    font-size: 11rem;
+  }
+}
 
 .Info-headerSub {
   font-size: 1.9rem;
@@ -548,6 +553,22 @@
 
 .Info-icon {
   color: #9a5dff;
+}
+
+.Info-bolt {
+  display: inline-block;
+  background: url('../img/icon-bolt.svg') no-repeat top center;
+  background-size: contain;
+  width: 4%;
+  padding-top: 5%;
+  margin-bottom: 3.2%;
+}
+@media screen and (min-width: 960px) {
+  .Info-bolt {
+    width: 3.8%;
+    padding-top: 4.8%;
+    margin-bottom: 3%;
+  }
 }
 
 .Info-section {
@@ -650,3 +671,6 @@
   .Info-subtitle {
     font-size: 3.2rem;
 }
+
+/* --- case study */
+

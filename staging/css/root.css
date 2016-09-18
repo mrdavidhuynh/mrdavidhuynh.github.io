@@ -4,16 +4,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  position: relative;
-  font-family: 'R', serif;
-  font-size: 1.6rem;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  color: white;
-  background: #3a075d;
-}
-
 *, *::before, *::after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;

@@ -1,3 +1,18 @@
+.Body {
+  position: relative;
+  font-family: 'R', serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  background: #3a075d;
+}
+
+.Body--light {
+  color: #222;
+  background: #fff;
+}
+
 /* --- container */
 
 .Container {
@@ -79,6 +94,9 @@
   height: 100%;
   background-color: #fff;
 }
+.Pattern-line--light {
+  background-color: #222;
+}
 
 /* --- nav */
 
@@ -151,7 +169,6 @@
   margin-bottom: .4rem;
   font-size: 1.8rem;
   line-height: 1;
-  opacity: .5;
   transition: opacity .3s;
   letter-spacing: .1rem;
 }
@@ -167,8 +184,8 @@
     font-size: 2.4rem
   }
 }
-.Nav-link--selected, .Nav-link:hover {
-  opacity: 1;
+.Nav-link--unselected {
+  opacity: .5;
 }
 
 .Nav-socialLink {
@@ -566,7 +583,7 @@
 @media screen and (min-width: 960px) {
   .Info-bolt {
     width: 3.8%;
-    padding-top: 4.8%;
+    padding-top: 4.6%;
     margin-bottom: 3%;
   }
 }

@@ -8,6 +8,7 @@
   <title>David Huynh, UI + Visual Designer</title>
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/root.css">
+  <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="shortcut icon" type="../image/png" href="http://www.mrdavidhuynh.com/images/favicon.png">
   <meta name="description" content="UI and Visual Designer from Vancouver, BC.">
@@ -33,7 +34,7 @@
       <a class="Nav-link" href="../">
         Work
       </a>
-      <a class="Nav-link" href="./">
+      <a class="Nav-link" href="../about/">
         About
       </a>
     </div>
@@ -53,42 +54,41 @@
 
   </nav>
 
-  <div class="Container">
+  <div class="Container u-space-bottom-clear">
 
     <section class="Section Header">
       <div class="Col">
         <h1 class="Header-title">Timeline</h1>
-        <h2 class="Header-subtitle">News in context</h2>
-        <p class="Header-body">
+        <h2 class="Header-subtitle u-tl-color">News, in context</h2>
+        <p class="Content-body">
           The Timeline News app launched on the iOS App Store in January of 2015. It instantly caught the attention of Apple and went on to receive numerous App Store features and accolades throughout the year.
         </p>
-        <p class="Header-body">
+        <p class="Content-body">
           The team I was working with at Axiom Zen was tasked with designing and engineering the app experience.
         </p>
       </div>
-      <div class="Col Header-img">
-        <div class="Header-img-src"></div>
+      <div class="Col Header-img u-tl-bgcolor">
+        <div class="Header-img-src Header-img-src--tl"></div>
       </div>
     </section>
 
     <section class="Section Role">
       <div class="Col Role-col">
-        <h3 class="Role-title">My Role</h3>
+        <h1 class="Content-title Role-title">
+          My Role<br><span class="u-tl-color">&mdash;</span>
+        </h1>
       </div>
       <div class="Col Role-col">
-        <ul class="Role-list">
-          <li>01  UI Prototyping</li>
-          <li>02  Landing page design and development</li>
-          <li>03  Graphic design support</li>
+        <ul class="Content-body Role-list">
+          <li><span class="u-tl-color">01</span>&ensp;UI Prototyping</li>
+          <li><span class="u-tl-color">02</span>&ensp;Landing page design and development</li>
+          <li><span class="u-tl-color">03</span>&ensp;Graphic design support</li>
         </ul>
       </div>
     </section>
 
     <section class="Section">
-      <div class="Col">
-        <img src="../img/tl-ui.png">
-      </div>
-      <div class="Col">
+      <div class="Col Content">
         <h1 class="Content-title">
           UI Prototyping
         </h1>
@@ -99,25 +99,27 @@
           The team I was working with at Axiom Zen was tasked with designing and engineering the app experience.
         </p>
       </div>
+      <div class="Col">
+        <img class="Content-shade" src="../img/tl-ui.png">
+      </div>
     </section>
 
   </div>
 
-  <div class="ContainerFull">
-    <div class="Container">
-      <section class="Section">
-        <div class="Col">
-          <img src="../img/tl-onboard1.png">
-        </div>
-        <div class="Col">
+  <div class="FullWrapper">
+    <div class="Container u-space-bottom-clear">
+      <section class="Section u-space-bottom-clear">
+        <div class="Col u-space-top">
           <img src="../img/tl-onboard2.png">
+        </div>
+        <div class="Col u-space-bottom-clear">
+          <img src="../img/tl-onboard1.png">
         </div>
       </section>
     </div>
   </div>
 
-  <div class="Container">
-
+  <div class="Container u-space-bottom-clear">
     <section class="Section">
       <div class="Col Content">
         <h1 class="Content-title">
@@ -131,20 +133,23 @@
         </p>
       </div>
       <div class="Col">
-        <img src="../img/tl-ui.png">
+        <img class="Content-shade" src="../img/tl-landing.png">
       </div>
     </section>
+  </div>
 
-    <section class="Section">
-      <div class="Video">
-        <iframe class="cs-video-src" src="http://player.vimeo.com/video/130365813?title=0&amp;byline=0&amp;portrait=0;color=8fffd1&amp;autoplay=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-      </div>
-    </section>
+  <div class="FullWrapper">
+    <div class="Container">
+      <section class="Section u-space-bottom-clear">
+        <div class="Video">
+          <iframe class="Video-src" src="http://player.vimeo.com/video/116830448?title=0&amp;byline=0&amp;portrait=0;color=269ed5&amp;autoplay=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        </div>
+      </section>
+    </div>
+  </div>
 
+  <div class="Container">
     <section class="Section">
-      <div class="Col">
-        <img src="../img/tl-graphic.png">
-      </div>
       <div class="Col Content">
         <h1 class="Content-title">
           Graphic Design
@@ -156,8 +161,10 @@
           The team I was working with at Axiom Zen was tasked with designing and engineering the app experience.
         </p>
       </div>
+      <div class="Col">
+        <img src="../img/tl-graphic.png">
+      </div>
     </section>
-
   </div>
 
   <div class="Pattern">

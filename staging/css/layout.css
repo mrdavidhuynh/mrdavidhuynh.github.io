@@ -1,0 +1,121 @@
+/* --- section */
+
+.Section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+}
+@media screen and (min-width: 410px) {
+  .Section {
+    margin-bottom: 7.5rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Section {
+    margin-bottom: 9rem;
+  }
+}
+
+/* --- column */
+
+.Col {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 680px) {
+  .Col {
+    margin-bottom: 6rem;
+  }
+}
+
+/* --- full wrapper */
+
+.FullWrapper {
+  width: 100%;
+  background-color: #f7f7f7;
+  margin-bottom: 6rem;
+}
+
+/* --- container */
+
+.Container {
+  max-width: 24rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+@media screen and (min-width: 410px) {
+  .Container {
+    max-width: 32rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Container {
+    max-width: 58.5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Container {
+    padding: 18rem 0 6rem;
+    max-width: 81rem;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Container {
+    padding: 18rem 0 6rem;
+    max-width: 98rem;
+  }
+}
+
+/* --- pattern */
+
+.Pattern {
+  position: fixed;
+  z-index: -99;
+  height: 100%;
+  width: 41.5rem;
+  top: 0;
+  left: 50%;
+  margin-left: -20.75rem;
+  opacity: .025;
+}
+@media screen and (min-width: 410px) {
+  .Pattern {
+    width: 76rem;
+    margin-left: -38rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Pattern {
+    width: 100rem;
+    margin-left: -50rem;
+    opacity: .05;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Pattern {
+    width: 138.5rem;
+    margin-left: -69.25rem;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Pattern {
+    width: 168rem;
+    margin-left: -84rem;
+  }
+}
+
+.Pattern-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.Pattern-line {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+}
+.Pattern-line--light {
+  background-color: #222;
+}

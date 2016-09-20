@@ -8,11 +8,23 @@
   -webkit-font-smoothing: antialiased;
   color: #fff;
   background: #3a075d;
+  padding: 0 0 3rem;
+}
+@media screen and (min-width: 960px) {
+  .Body {
+    padding: 18rem 0 12rem;
+  }
 }
 
-.Body--light {
+.Body--cs {
   color: #222;
   background: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  .Body--cs {
+    text-align: left;
+  }
 }
 
 /* --- nav */
@@ -23,6 +35,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.75rem;
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 410px) {
   .Nav {
@@ -592,47 +605,45 @@
 .Header {
   margin: 0 auto;
 }
-
+@media screen and (min-width: 960px) {
+  .Header {
+    margin-bottom: 15rem;
+  }
+}
 
 .Header-title {
   color: #252525;
   font-size: 3.8rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
+  line-height: 1;
 }
 @media screen and (min-width: 680px) {
   .Header-title {
-    font-size: 5.6rem;
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Header-title {
+    font-size: 8rem;
+    letter-spacing: -1px;
   }
 }
 
 .Header-subtitle {
-  font-size: 2.2rem;
-  margin-bottom: 2.5rem;
-}
-@media screen and (min-width: 680px) {
-  .Header-subtitle {
-    font-size: 3.2rem;
-  }
-}
-
-.Header-body {
-  font-size: 1.6rem;
-  line-height: 1.4;
-  color: #595959;
+  margin-bottom: 2rem;
 }
 
 .Header-img {
   display: block;
-  width: 100%;
   position: relative;
   margin: 0 auto;
   padding-top: 73%;
   cursor: pointer;
-  border-radius: 6px 6px 0 0;
   box-shadow: 0 0 5rem #d9d9d9;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 960px) {
   .Header-img {
+    padding-top: 120%;
     border-radius: 0;
   }
 }
@@ -662,13 +673,18 @@
 /* --- content */
 
 .Content-title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1.4;
   color: #252525;
 }
 @media screen and (min-width: 680px) {
   .Content-title {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Content-title {
+    font-size: 4.3rem;
   }
 }
 
@@ -676,7 +692,6 @@
   font-size: 1.6rem;
   line-height: 1.45;
   color: #595959;
-  max-width: 54rem;
 }
 @media screen and (min-width: 410px) {
   .Content-body {
@@ -685,8 +700,19 @@
 }
 @media screen and (min-width: 680px) {
   .Content-body {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    max-width: 50rem;
     line-height: 1.5;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Content-body {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .Content-body {
+    font-size: 2.1rem;
   }
 }
 
@@ -699,30 +725,57 @@
 
 .Role {
   background: #fff;
-  border-radius: 0 0 6px 6px;
-  padding: 1.75rem;
+  padding: 3rem 1.75rem;
   box-shadow: 0 0 5rem #d9d9d9;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 @media screen and (min-width: 680px) {
   .Role {
-    padding: 3rem;
-    border-radius: 0;
+    padding: 6rem 3rem 4.5rem;
+    width: 71%;
   }
 }
 @media screen and (min-width: 960px) {
   .Role {
     box-shadow: none;
+    width: 100%;
+    background: none;
+    padding: 6.5% 5.5%;
+  }
+  .Role::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+    z-index: -1;
   }
 }
 
 .Role-col {
-  margin: 0;
-  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 960px) {
+  .Role-col {
+    margin: 0;
+  }
+  .Role-col--title {
+    width: 42%;
+    padding-left: 9.5%;
+  }
+  .Role-col--list {
+    width: 58%;
+  }
 }
 
 .Role-title {
   margin-bottom: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .Role-list {
@@ -740,6 +793,12 @@
   position: relative;
   padding-top: 58%;
   margin: 3rem 0;
+}
+@media screen and (min-width: 960px) {
+  .Video  {
+    margin: 7.5rem auto;
+    padding-top: 57%;
+  }
 }
 
 .Video-src {
@@ -794,5 +853,5 @@
 }
 
 .u-space-top {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
 }

@@ -3,7 +3,8 @@
 .Section {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 6rem;
+  margin: 0 auto 6rem;
+  align-items: center;
 }
 @media screen and (min-width: 410px) {
   .Section {
@@ -15,15 +16,44 @@
     margin-bottom: 9rem;
   }
 }
+@media screen and (min-width: 960px) {
+  .Section {
+    margin-bottom: 15rem;
+  }
+  .Section--reverse {
+    flex-direction: row-reverse;
+  }
+  .Section--pad-top {
+    padding-top: 9rem;
+  }
+}
 
 /* --- column */
 
 .Col {
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
+}
+.Col--img {
+  width: 100%;
 }
 @media screen and (min-width: 680px) {
   .Col {
     margin-bottom: 6rem;
+  }
+  .Col--img {
+    width: 71%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Col {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .Col--pad-right {
+    padding-right: 7%;
+  }
+  .Col--pad-left{
+    padding-left: 7%;
   }
 }
 
@@ -32,14 +62,12 @@
 .FullWrapper {
   width: 100%;
   background-color: #f7f7f7;
-  margin-bottom: 6rem;
 }
 
 /* --- container */
 
 .Container {
   max-width: 24rem;
-  padding: 3rem 0;
   margin: 0 auto;
 }
 @media screen and (min-width: 410px) {
@@ -54,13 +82,11 @@
 }
 @media screen and (min-width: 960px) {
   .Container {
-    padding: 18rem 0 6rem;
     max-width: 81rem;
   }
 }
 @media screen and (min-width: 1320px) {
   .Container {
-    padding: 18rem 0 6rem;
     max-width: 98rem;
   }
 }
@@ -117,5 +143,5 @@
   background-color: #fff;
 }
 .Pattern-line--light {
-  background-color: #222;
+  background-color: #292929;
 }

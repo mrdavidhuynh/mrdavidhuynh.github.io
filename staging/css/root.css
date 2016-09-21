@@ -3,6 +3,11 @@
 html {
   font-size: 62.5%;
 }
+@media screen and (min-width: 1320px) {
+  html {
+    font-size: 67.5%;
+  }
+}
 
 *, *::before, *::after {
   -moz-box-sizing: border-box;
@@ -51,9 +56,9 @@ strong {
 
 @font-face {
   font-family: 'R';
-  src: url('../fonts/R-Regular.eot');
-  src: url('../fonts/R-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/R-Regular.woff') format('woff'),
-    url('../fonts/R-Regular.ttf') format('truetype');
+  src: url('../fonts/NeuzeitGro-Reg.eot');
+  src: url('../fonts/NeuzeitGro-Reg.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeuzeitGro-Reg.woff') format('woff'),
+    url('../fonts/NeuzeitGro-Reg.ttf') format('truetype');
   font-weight: normal;
 }

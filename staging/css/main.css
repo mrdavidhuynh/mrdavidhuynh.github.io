@@ -105,13 +105,13 @@
 @media screen and (min-width: 410px) {
   .Nav-link {
     margin-left: 2.25rem;
-    font-size: 2.4rem
+    font-size: 2rem
   }
 }
 @media screen and (min-width: 680px) {
   .Nav-link {
     margin-left: 3rem;
-    font-size: 2.4rem
+    font-size: 2.3rem
   }
 }
 .Nav-link--unselected {
@@ -193,7 +193,7 @@
   }
   .Works-description--tl {
     top: 54%;
-    left: 43%;
+    left: 28.5%;
   }
   .Works-description--plume {
     left: 28.5%;
@@ -215,31 +215,23 @@
 }
 @media screen and (min-width: 680px) {
   .Works-title {
-    font-size: 3.8rem;
+    font-size: 4rem;
     padding: 0;
   }
 }
 @media screen and (min-width: 960px) {
   .Works-title {
     font-size: 6.4rem;
+    letter-spacing: -0.5px
   }
   .Works-title-sm {
     font-size: 5.2rem;
     padding: 0;
   }
 }
-@media screen and (min-width: 1320px) {
-  .Works-title {
-    font-size: 7.7rem;
-  }
-  .Works-title-sm {
-    font-size: 6.4rem;
-    padding: 0;
-  }
-}
 
 .Works-subtitle {
-  margin: 0;
+  margin: 4px 0 0;
   opacity: .75;
   text-shadow: 0 0 3rem rgba(15,2,36,.5);
   font-size: 2rem;
@@ -248,18 +240,13 @@
 }
 @media screen and (min-width: 680px) {
   .Works-subtitle {
-    font-size: 2.2rem
+    font-size: 2.3rem
   }
 }
 @media screen and (min-width: 960px) {
   .Works-subtitle {
     margin: 0;
-    opacity: .95;
-    font-size: 2.6rem
-  }
-}
-@media screen and (min-width: 1320px) {
-  .Works-subtitle {
+    opacity: 1;
     font-size: 3rem
   }
 }
@@ -312,9 +299,6 @@
     width: 42.85%;
     max-width: 42.85%;
     padding-top: 52%;
-    margin-right: 0;
-  }
-  .Works-frame--routific {
     margin-right: 14.5%;
   }
   .Works-frame::after {
@@ -405,7 +389,7 @@
     margin: auto;
     font-size: 1.6rem;
     letter-spacing: .5rem;
-    opacity: .66;
+    opacity: .8;
     transform: rotate(-90deg);
   }
 }
@@ -418,17 +402,6 @@
   .Works-label--az, .Works-label--ht, .Works-label--tl {
     left:  auto;
     right: -6.8rem;
-    transform: rotate(90deg);
-  }
-}
-@media screen and (min-width: 1320px) {
-  .Works-label {
-    font-size: 2rem;
-    left: -7.6rem;
-  }
-  .Works-label--az, .Works-label--ht, .Works-label--tl {
-    left:  auto;
-    right: -7.6rem;
     transform: rotate(90deg);
   }
 }
@@ -452,14 +425,10 @@
     font-size: 9.2rem;
   }
 }
-@media screen and (min-width: 1320px) {
-  .Info-header {
-    font-size: 11rem;
-  }
-}
 
 .Info-headerSub {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
+  font-weight: normal;
   line-height: 1.4;
   margin: 0 0 7.5rem;
   text-align: center;
@@ -467,13 +436,13 @@
 }
 @media screen and (min-width: 680px) {
   .Info-headerSub {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 14rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-headerSub {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 20rem;
   }
 }
@@ -487,8 +456,15 @@
   background: url('../img/icon-bolt.svg') no-repeat top center;
   background-size: contain;
   width: 4%;
-  padding-top: 5%;
-  margin-bottom: 3.2%;
+  padding-top: 7%;
+  margin-bottom: 4.2%;
+}
+@media screen and (min-width: 410px) {
+  .Info-bolt {
+    width: 4%;
+    padding-top: 5%;
+    margin-bottom: 3.2%;
+  }
 }
 @media screen and (min-width: 960px) {
   .Info-bolt {
@@ -524,11 +500,6 @@
     margin-bottom: 4.5rem;
   }
 }
-@media screen and (min-width: 1320px) {
-  .Info-section {
-    padding: 15% 14%;
-  }
-}
 
 .Info-badge {
   max-width: 9rem;
@@ -543,11 +514,6 @@
 @media screen and (min-width: 960px) {
   .Info-badge {
     margin: 0;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .Info-badge {
-    max-width: 17rem;
   }
 }
 
@@ -578,25 +544,21 @@
     font-size: 6.5rem;
   }
 }
-@media screen and (min-width: 1320px) {
-  .Info-title {
-    font-size: 7.2rem;
-  }
-}
 
 .Info-subtitle {
-  font-size: 1.9rem;
+  font-size: 2rem;
+  font-weight: normal;
   line-height: 1.5;
   color: #9a5dff;
 }
 @media screen and (min-width: 680px) {
   .Info-subtitle {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Info-subtitle {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -620,12 +582,6 @@
 @media screen and (min-width: 680px) {
   .Header-title {
     font-size: 6rem;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .Header-title {
-    font-size: 8rem;
-    letter-spacing: -1px;
   }
 }
 
@@ -682,11 +638,6 @@
     font-size: 3.5rem;
   }
 }
-@media screen and (min-width: 1320px) {
-  .Content-title {
-    font-size: 4.3rem;
-  }
-}
 
 .Content-body {
   font-size: 1.6rem;
@@ -708,11 +659,6 @@
 @media screen and (min-width: 960px) {
   .Content-body {
     max-width: 100%;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .Content-body {
-    font-size: 2.1rem;
   }
 }
 

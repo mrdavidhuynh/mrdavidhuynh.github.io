@@ -8,14 +8,14 @@ html {
     font-size: 67.5%;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1500px) {
   html {
-    font-size: 70%;
+    font-size: 72%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1800px) {
   html {
-    font-size: 72.5%;
+    font-size: 77.5%;
   }
 }
 

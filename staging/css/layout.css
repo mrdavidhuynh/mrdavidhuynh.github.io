@@ -31,16 +31,12 @@
 /* --- column */
 
 .Col {
-  margin: 0 auto 3rem;
-}
-.Col--img {
   width: 100%;
+  margin: 0 auto 3rem;
 }
 @media screen and (min-width: 680px) {
   .Col {
     margin-bottom: 6rem;
-  }
-  .Col--img {
     width: 71%;
   }
 }
@@ -132,5 +128,5 @@
   background-color: #fff;
 }
 .Pattern-line--light {
-  background-color: #292929;
+  background-color: #555;
 }

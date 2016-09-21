@@ -12,7 +12,7 @@
 }
 @media screen and (min-width: 960px) {
   .Body {
-    padding: 18rem 0 12rem;
+    padding: 18rem 0 9rem;
   }
 }
 
@@ -24,6 +24,7 @@
 @media screen and (min-width: 960px) {
   .Body--cs {
     text-align: left;
+    padding: 12rem 0 3rem;
   }
 }
 
@@ -100,7 +101,6 @@
   font-size: 1.8rem;
   line-height: 1;
   transition: opacity .3s;
-  letter-spacing: 1px;
 }
 @media screen and (min-width: 410px) {
   .Nav-link {
@@ -541,7 +541,7 @@
 }
 @media screen and (min-width: 960px) {
   .Info-title {
-    font-size: 6.5rem;
+    font-size: 6rem;
   }
 }
 
@@ -574,32 +574,46 @@
 }
 
 .Header-title {
-  color: #252525;
+  color: #111;
   font-size: 3.8rem;
   margin-bottom: 0;
   line-height: 1;
+  letter-spacing: -.1rem
 }
 @media screen and (min-width: 680px) {
   .Header-title {
     font-size: 6rem;
   }
 }
+@media screen and (min-width: 960px) {
+  .Header-title {
+    font-size: 6.6rem;
+  }
+}
 
 .Header-subtitle {
-  margin-bottom: 2rem;
+  color: #606060;
+  font-size: 1.6rem;
+  margin: 1.5rem 0 3rem;
+  letter-spacing: .2rem;
+}
+@media screen and (min-width: 680px) {
+  .Header-subtitle {
+    font-size: 2rem;
+  }
 }
 
 .Header-img {
-  display: block;
   position: relative;
   margin: 0 auto;
+  width: 100%;
   padding-top: 73%;
-  cursor: pointer;
   box-shadow: 0 0 5rem #d9d9d9;
+  z-index: 3;
 }
 @media screen and (min-width: 960px) {
   .Header-img {
-    padding-top: 120%;
+    padding-top: 142%;
     border-radius: 0;
   }
 }
@@ -623,15 +637,40 @@
 .Header-img-src--tl {
   background: url('../img/tl-header.png') no-repeat center;
   background-size: contain;
-  height: 112%;
+  height: 84%;
+}
+
+.Header-label {
+  position: absolute;
+  display: none;
+  text-align: center;
+  letter-spacing: .5rem;
+  right:  auto;
+  left: 5.3rem;
+  top: 0;
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+@media screen and (min-width: 680px) {
+  .Header-label {
+    display: block;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Header-label {
+    display: block;
+    left:  0;
+    right: 7.8rem;
+    transform: rotate(90deg);
+  }
 }
 
 /* --- content */
 
 .Content-title {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   line-height: 1.4;
-  color: #252525;
+  color: #111;
 }
 @media screen and (min-width: 680px) {
   .Content-title {
@@ -640,31 +679,42 @@
 }
 
 .Content-body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.45;
-  color: #595959;
-}
-@media screen and (min-width: 410px) {
-  .Content-body {
-    font-size: 1.8rem;
-  }
+  color: #404040;
 }
 @media screen and (min-width: 680px) {
   .Content-body {
-    font-size: 2rem;
-    max-width: 50rem;
+    font-size: 1.7rem;
     line-height: 1.5;
   }
 }
 @media screen and (min-width: 960px) {
   .Content-body {
-    max-width: 100%;
+    font-size: 1.9rem;
   }
 }
 
 .Content-shade {
-  box-shadow: 0 0 5rem #d9d9d9;
+  box-shadow: 0 1rem 5rem #d9d9d9;
   border-radius: 7px;
+}
+
+.Content-label {
+  font-size: 1.4rem;
+  line-height: 1.45;
+  color: #404040;
+}
+@media screen and (min-width: 680px) {
+  .Content-label {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Content-label {
+    font-size: 1.8rem;
+  }
 }
 
 /* --- role */
@@ -688,7 +738,7 @@
     box-shadow: none;
     width: 100%;
     background: none;
-    padding: 6.5% 5.5%;
+    padding: 7.5% 5.5%;
   }
   .Role::after {
     content: '';
@@ -757,6 +807,29 @@
 }
 
 /* --- utilities */
+
+.u-dark-color {
+  color: #252525;
+}
+.u-dark-bgcolor {
+  background-color: #252525;
+}
+
+.u-grey-color {
+  color: #484848;
+}
+
+.u-light-grey-color {
+  color: #d8d8d8;
+}
+
+.u-brand-color {
+  color: #3a075d;
+}
+
+.u-light-brand-color {
+  color: #CDAEFF;
+}
 
 .u-az-color {
   color: #d43772;

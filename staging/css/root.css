@@ -8,6 +8,16 @@ html {
     font-size: 67.5%;
   }
 }
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 72.5%;
+  }
+}
 
 *, *::before, *::after {
   -moz-box-sizing: border-box;

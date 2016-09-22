@@ -591,19 +591,7 @@
   }
 }
 
-.Header-subtitle {
-  color: #606060;
-  font-size: 1.6rem;
-  margin: 1.5rem 0 3rem;
-  letter-spacing: .2rem;
-}
-@media screen and (min-width: 680px) {
-  .Header-subtitle {
-    font-size: 2rem;
-  }
-}
-
-.Header-img {
+.Header-frame {
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -612,18 +600,14 @@
   z-index: 3;
 }
 @media screen and (min-width: 960px) {
-  .Header-img {
-    padding-top: 142%;
+  .Header-frame {
+    padding-top: 145%;
     border-radius: 0;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Header-img {
     box-shadow: none;
   }
 }
 
-.Header-img-src {
+.Header-frame-src {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -634,34 +618,28 @@
   height: 100%;
   margin: auto;
 }
-.Header-img-src--tl {
-  background: url('../img/tl-header.png') no-repeat center;
-  background-size: contain;
-  height: 84%;
+.Header-frame-src--tl {
+  background: url('../img/tl-photo.png') no-repeat center;
+  background-size: cover;
 }
 
 .Header-label {
-  position: absolute;
   display: none;
-  text-align: center;
-  letter-spacing: .5rem;
-  right:  auto;
-  left: 5.3rem;
-  top: 0;
-  bottom: 0;
-  transform: rotate(-90deg);
-}
-@media screen and (min-width: 680px) {
-  .Header-label {
-    display: block;
-  }
 }
 @media screen and (min-width: 960px) {
   .Header-label {
+    position: absolute;
     display: block;
-    left:  0;
-    right: 7.8rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    right: 12.4rem;
+    top: 0;
+    bottom: 0;
     transform: rotate(90deg);
+  }
+  .Header-label img {
+    display: inline;
+    max-width: 5rem;
   }
 }
 
@@ -701,19 +679,19 @@
 }
 
 .Content-label {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.45;
   color: #404040;
 }
 @media screen and (min-width: 680px) {
   .Content-label {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.5;
   }
 }
 @media screen and (min-width: 960px) {
   .Content-label {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -737,18 +715,18 @@
   .Role {
     box-shadow: none;
     width: 100%;
-    background: none;
+    background: #f7f7f7;
     padding: 7.5% 5.5%;
   }
   .Role::after {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: -50%;
     width: 100%;
     height: 100%;
     background: #f7f7f7;
-    z-index: -1;
+    z-index: -2;
   }
 }
 

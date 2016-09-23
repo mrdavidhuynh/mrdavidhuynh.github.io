@@ -8,14 +8,14 @@ html {
     font-size: 67.5%;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
   html {
-    font-size: 72%;
+    font-size: 75%;
   }
 }
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1920px) {
   html {
-    font-size: 77.5%;
+    font-size: 80%;
   }
 }
 
@@ -57,18 +57,18 @@ strong {
 
 @font-face {
   font-family: 'R';
-  src: url('../fonts/R-Bold.eot');
-  src: url('../fonts/R-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/R-Bold.woff') format('woff'),
-    url('../fonts/R-Bold.ttf') format('truetype');
-  font-weight: bold;
+  src: url('../fonts/Akkurat.eot');
+  src: url('../fonts/Akkurat.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Akkurat.woff') format('woff'),
+    url('../fonts/Akkurat.ttf') format('truetype');
+  font-weight: normal;
 }
 
 @font-face {
   font-family: 'R';
-  src: url('../fonts/NeuzeitGro-Reg.eot');
-  src: url('../fonts/NeuzeitGro-Reg.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/NeuzeitGro-Reg.woff') format('woff'),
-    url('../fonts/NeuzeitGro-Reg.ttf') format('truetype');
-  font-weight: normal;
+  src: url('../fonts/Akkurat-Bold.eot');
+  src: url('../fonts/Akkurat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Akkurat-Bold.woff') format('woff'),
+    url('../fonts/Akkurat-Bold.ttf') format('truetype');
+  font-weight: bold;
 }

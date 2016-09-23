@@ -19,6 +19,10 @@
   <meta property="og:url" content="http://www.mrdavidhuynh.com">
   <meta property="og:image" content="images/work_ill.jpg">
   <meta property="og:description" content="UI and Visual Designer from Vancouver, BC.">
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal();
+  </script>
 </head>
 
 <body class="Body Body--cs">
@@ -53,7 +57,7 @@
 
   <div class="Container">
     <section class="Section Header">
-      <div class="Col Col--pad-right">
+      <div class="Col Col--pad-right js-fade-cs">
         <h1 class="Header-title">Timeline</h1>
         <h4 class="Content-title u-tl-color">
           &mdash;
@@ -104,13 +108,13 @@
           The team I was working with at Axiom Zen was tasked with designing and engineering the app experience.
         </p>
       </div>
-      <div class="Col Col--pad-right">
-        <img class="Content-shade" src="../img/tl-ui.png">
+      <div class="Col Col--pad-right js-fade-cs">
+        <img class="u-shade" src="../img/tl-ui.png">
       </div>
     </section>
   </div>
 
-  <div class="FullWrapper">
+  <div class="FullWrapper js-fade-cs">
     <div class="Container">
       <section class="Section Section--pad-top">
         <div class="Col u-space-top">
@@ -136,8 +140,8 @@
           The team I was working with at Axiom Zen was tasked with designing and engineering the app experience.
         </p>
       </div>
-      <div class="Col Col--pad-left">
-        <img class="Content-shade" src="../img/tl-landing.png">
+      <div class="Col Col--pad-left js-fade-cs">
+        <img class="u-shade" src="../img/tl-landing.png">
       </div>
     </section>
   </div>
@@ -145,7 +149,7 @@
   <div class="FullWrapper">
     <div class="Container">
       <section class="Section">
-        <div class="Video">
+        <div class="Video js-fade-cs">
           <iframe class="Video-src" src="http://player.vimeo.com/video/116830448?title=0&amp;byline=0&amp;portrait=0;color=269ed5&amp;autoplay=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
         </div>
       </section>
@@ -165,7 +169,7 @@
           The team I was working with at Axiom Zen was tasked with designing and engineering the app experience.
         </p>
       </div>
-      <div class="Col Col--pad-right">
+      <div class="Col Col--pad-right js-fade-cs">
         <img src="../img/tl-graphic.png">
       </div>
     </section>
@@ -187,6 +191,10 @@
       <div class="Pattern-line Pattern-line--light"></div>
     </div>
   </div>
+
+  <script>
+    sr.reveal('.js-fade-cs', { distance: '7.5rem', scale: 1, viewFactor: 0.5, duration: 500, opacity: .1 });
+  </script>
 
   <!--
   <script async="" src="//www.google-analytics.com/analytics.js"></script>

@@ -19,6 +19,10 @@
   <meta property="og:url" content="http://www.mrdavidhuynh.com">
   <meta property="og:image" content="images/work_ill.jpg">
   <meta property="og:description" content="UI and Visual Designer from Vancouver, BC.">
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal();
+  </script>
 </head>
 
 <body class="Body">
@@ -56,7 +60,7 @@
 
   <div class="Container">
 
-    <div class="Works-preview Works-preview--az">
+    <div class="Works-preview Works-preview--az js-fade-work">
       <a class="Works-description Works-description--az" href="./axiomzen">
         <h1 class="Works-title">
           Axiom Zen
@@ -71,7 +75,7 @@
       </a>
     </div>
 
-    <div class="Works-preview Works-preview--tl">
+    <div class="Works-preview Works-preview--tl js-fade-work">
       <a class="Works-description Works-description--tl" href="./timeline">
         <h1 class="Works-title">
           Timeline
@@ -86,7 +90,7 @@
       </a>
     </div>
 
-    <div class="Works-preview Works-preview--plume">
+    <div class="Works-preview Works-preview--plume js-fade-work">
       <a class="Works-description Works-description--plume" href="./plume">
         <h1 class="Works-title">
           Plume Wi-Fi
@@ -101,7 +105,7 @@
       </a>
     </div>
 
-    <div class="Works-preview Works-preview--routific">
+    <div class="Works-preview Works-preview--routific js-fade-work">
       <a class="Works-description Works-description--routific" href="./routific">
         <h1 class="Works-title">
           Routific
@@ -116,7 +120,7 @@
       </a>
     </div>
 
-    <div class="Works-preview Works-preview--ht">
+    <div class="Works-preview Works-preview--ht js-fade-work">
       <a class="Works-description Works-description--ht" href="./hammer-tusk">
         <h1 class="Works-title Works-title-sm">
           Hammer &amp; Tusk
@@ -150,6 +154,10 @@
     </div>
   </div>
 
+  <script>
+    sr.reveal('.js-fade-work', { distance: '4rem', scale: 1, viewFactor: 0.75, duration: 900, opacity: .3 });
+
+  </script>
 
   <!--
   <script async="" src="//www.google-analytics.com/analytics.js"></script>

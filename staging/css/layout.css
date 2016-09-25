@@ -43,6 +43,9 @@
     margin-bottom: 6rem;
     width: 71%;
   }
+  .Col--full {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 960px) {
   .Col {

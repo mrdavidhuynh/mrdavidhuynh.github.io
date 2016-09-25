@@ -649,11 +649,6 @@
     font-size: 5.6rem;
   }
 }
-@media screen and (min-width: 960px) {
-  .Header-title {
-    font-size: 6.4rem;
-  }
-}
 
 .Header-frame {
   position: relative;
@@ -666,7 +661,7 @@
 }
 @media screen and (min-width: 960px) {
   .Header-frame {
-    padding-top: 145%;
+    padding-top: 140%;
     border-radius: 0;
     box-shadow: none;
   }

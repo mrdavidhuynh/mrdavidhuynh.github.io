@@ -56,7 +56,7 @@ strong {
 /* --- fonts */
 
 @font-face {
-  font-family: 'R';
+  font-family: 'Akkurat';
   src: url('../fonts/Akkurat.eot');
   src: url('../fonts/Akkurat.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Akkurat.woff') format('woff'),
@@ -65,7 +65,7 @@ strong {
 }
 
 @font-face {
-  font-family: 'R';
+  font-family: 'Akkurat';
   src: url('../fonts/Akkurat-Bold.eot');
   src: url('../fonts/Akkurat-Bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Akkurat-Bold.woff') format('woff'),

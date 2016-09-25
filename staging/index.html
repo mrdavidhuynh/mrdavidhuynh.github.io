@@ -31,9 +31,8 @@
 
     <div class="Nav-menu">
       <div class="Nav-logo">
-        <a href="./">
-          <img src="img/logo.svg">
-        </a>
+        <a href="./"><img src="./img/logo.svg"></a>
+        <div class="Nav-logo-shadow"></div>
       </div>
       <a class="Nav-link" href="./">
         Work
@@ -60,7 +59,7 @@
 
   <div class="Container">
 
-    <div class="Works-preview Works-preview--az js-fade-work">
+    <div class="Works-preview Works-preview--az js-fade-header">
       <a class="Works-description Works-description--az" href="./axiomzen">
         <h1 class="Works-title">
           Axiom Zen
@@ -71,7 +70,7 @@
       </a>
       <a class="Works-frame Works-frame--az u-az-color u-az-bgcolor" href="./axiomzen">
         <div class="Works-img Works-img--az"></div>
-        <div class="Works-label Works-label--az">01&nbsp;/&nbsp;05</div>
+        <div class="Works-label Works-label--az Content-label">CASE STUDY <strong>01</strong></div>
       </a>
     </div>
 
@@ -86,7 +85,7 @@
       </a>
       <a class="Works-frame Works-frame--tl u-tl-color u-tl-bgcolor" href="./timeline">
         <div class="Works-img Works-img--tl"></div>
-        <div class="Works-label Works-label--tl">02&nbsp;/&nbsp;05</div>
+        <div class="Works-label Works-label--tl Content-label">CASE STUDY <strong>02</strong></div>
       </a>
     </div>
 
@@ -101,7 +100,7 @@
       </a>
       <a class="Works-frame Works-frame--plume u-plume-color u-plume-bgcolor" href="./plume">
         <div class="Works-img Works-img--plume"></div>
-        <div class="Works-label" "Works-label--plume">03&nbsp;/&nbsp;05</div>
+        <div class="Works-label Content-label" "Works-label--plume">CASE STUDY <strong>03</strong></div>
       </a>
     </div>
 
@@ -116,7 +115,7 @@
       </a>
       <a class="Works-frame Works-frame--routific u-routific-color u-routific-bgcolor" href="./routific">
         <div class="Works-img Works-img--routific"></div>
-        <div class="Works-label Works-label--routific">04&nbsp;/&nbsp;05</div>
+        <div class="Works-label Works-label--routific Content-label">CASE STUDY <strong>04</strong></div>
       </a>
     </div>
 
@@ -126,12 +125,12 @@
           Hammer &amp; Tusk
         </h1>
         <h2 class="Works-subtitle">
-          branding &amp; web design
+          branding &amp; web
         </h2>
       </a>
       <a class="Works-frame Works-frame--ht u-ht-color u-ht-bgcolor" href="./hammer-tusk">
         <div class="Works-img Works-img--ht"></div>
-        <div class="Works-label Works-label--ht">05&nbsp;/&nbsp;05</div>
+        <div class="Works-label Works-label--ht Content-label">CASE STUDY <strong>05</strong></div>
       </a>
     </div>
 
@@ -155,7 +154,8 @@
   </div>
 
   <script>
-    sr.reveal('.js-fade-work', { distance: '7rem', scale: 1, viewFactor: 0.6, duration: 700, opacity: .3 });
+    sr.reveal('.js-fade-header', { distance: '7.5rem', scale: 1, viewFactor: 0.1, duration: 700, opacity: 0 });
+    sr.reveal('.js-fade-work', { distance: '15rem', scale: 1, viewFactor: 0.33, duration: 700, opacity: 0 });
   </script>
 
   <!--

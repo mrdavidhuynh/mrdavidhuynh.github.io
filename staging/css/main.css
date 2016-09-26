@@ -648,6 +648,9 @@
   .Header-title {
     font-size: 5.6rem;
   }
+  .Header-title--sm {
+    font-size: 4.7rem;
+  }
 }
 
 .Header-frame {
@@ -990,5 +993,5 @@
 }
 
 .u-shade {
-  box-shadow: 0 1rem 5rem #d9d9d9;
+  box-shadow: 0 1rem 5.2rem #ddd;
 }

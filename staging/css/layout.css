@@ -36,7 +36,7 @@
   margin: 0 auto 3rem;
 }
 .Col--full {
-  padding: 4.5rem 0
+  padding: 4.5rem 0;
   margin-bottom: 0;
 }
 @media screen and (min-width: 680px) {
@@ -54,13 +54,18 @@
     margin-bottom: 0;
   }
   .Col--full {
-    padding: 7.5rem 0;
+    padding: 9rem 0;
     width: 100%;
   }
-  .Col--pad-right {
+  .Col--center {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .Col--left {
     padding-right: 7%;
   }
-  .Col--pad-left{
+  .Col--right{
     padding-left: 7%;
   }
 }

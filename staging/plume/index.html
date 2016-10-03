@@ -56,7 +56,7 @@
 
   <div class="Container">
     <section class="Section Header">
-      <div class="Col Col--left js-fade-cs">
+      <div class="Col Col--left">
         <h1 class="Header-title">Plume WiFi</h1>
         <h4 class="Content-title u-plume-color">
           &mdash;
@@ -68,13 +68,10 @@
           The team I was working with at Axiom Zen was tasked with designing and engineering the app experience.
         </p>
       </div>
-      <div class="Col Col--right u-space-bottom-clear">
-        <div class="Header-frame">
-          <div class="Header-frame-src Header-frame-src--tl"></div>
-          <div class="Content-label Header-label">
-            TIMELINE.COM
-            <img src="../img/icon-arrow.svg">
-          </div>
+      <div class="Col Col--right js-fade-cs">
+        <div class="Header-frame cycle-slideshow" data-cycle-speed="750" data-cycle-timeout="1500">
+          <img src="../img/tl-ui.png" class="cycle-slide">
+          <img src="../img/tl-photo.png" class="cycle-slide">
         </div>
       </div>
     </section>
@@ -207,6 +204,9 @@
       <div class="Pattern-line Pattern-line--light"></div>
     </div>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../scripts/cycle.js"></script>
 
   <script>
     sr.reveal('.js-fade-cs', { distance: '7.5rem', scale: 1, viewFactor: 0.33, duration: 500, opacity: 0 });

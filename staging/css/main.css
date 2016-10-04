@@ -98,7 +98,7 @@
   transform: scale(1.05) translate(0,-.3rem);
 }
 .Nav-logo:hover div {
-  transform: scale(.6, .7);
+  transform: scale(.8);
 }
 @media screen and (min-width: 410px) {
   .Nav-logo {
@@ -142,7 +142,7 @@
   margin-bottom: .4rem;
   font-size: 1.4rem;
   line-height: 1;
-  transition: opacity .3s, transform .3s;
+  transition: opacity .4s, transform .4s;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .25rem;
@@ -151,7 +151,7 @@
 .Nav-link:hover {
   opacity: 1;
   color: #3a075d;
-  transform: scale(.85);
+  transform: scale(.9);
 }
 .Nav-link::after {
   content: '';
@@ -164,12 +164,12 @@
   height: 100%;
   margin: auto;
   background: #fff;
-  transition: transform .3s, opacity .3s;
+  transition: transform .4s, opacity .4s;
   z-index: -1;
   opacity: 0;
 }
 .Nav-link:hover::after {
-  transform: scale(1.4, 2.2);
+  transform: scale(1.3, 2.1);
   opacity: 1;
 }
 .Nav-link--unselected {
@@ -191,10 +191,11 @@
 .Nav-socialLink {
   max-width: 2.4rem;
   margin-left: 1.25rem;
-  transition: transform .3s;
+  opacity: .75;
+  transition: opacity .4s;
 }
 .Nav-socialLink:hover {
-  transform: scale(1.1);
+  opacity: 1
 }
 @media screen and (min-width: 410px) {
   .Nav-socialLink {
@@ -386,7 +387,7 @@
   width: 100%;
   height: 100%;
   margin: auto;
-  transition: transform .3s;
+  transition: transform .4s;
 }
 .Works-img--az {
   background: url('../img/home-az.png') no-repeat center;
@@ -428,7 +429,7 @@
 }
 @media screen and (min-width: 960px) {
   .Works-img:hover {
-    transform: scale(.95);
+    transform: scale(.96);
   }
   .Works-img--az {
     background-size: 96% auto;
@@ -649,7 +650,6 @@
   margin: 0 auto;
   width: 100%;
   background: #999;
-  box-shadow: 0 0 5rem #d9d9d9;
   z-index: 3;
 }
 @media screen and (min-width: 960px) {
@@ -713,12 +713,21 @@
 /* --- role */
 
 .Role {
-  background: #fff;
-  padding: 3rem 1.75rem;
-  box-shadow: 0 0 5rem #d9d9d9;
+  padding: 4.5rem 1.75rem;
   position: relative;
   align-items: flex-start;
   justify-content: flex-start;
+}
+.Role::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+  z-index: -2;
+  transform: scaleX(3);
 }
 @media screen and (min-width: 680px) {
   .Role {
@@ -728,20 +737,11 @@
 }
 @media screen and (min-width: 960px) {
   .Role {
-    box-shadow: none;
     width: 100%;
-    background: #f7f7f7;
     padding: 7.5% 5.5% 7.5% 0;
   }
   .Role::after {
-    content: '';
-    position: absolute;
-    top: 0;
     left: -100%;
-    width: 200%;
-    height: 100%;
-    background: #f7f7f7;
-    z-index: -2;
   }
 }
 

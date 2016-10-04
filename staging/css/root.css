@@ -15,12 +15,12 @@ html {
 }
 @media screen and (min-width: 1920px) {
   html {
-    font-size: 80%;
+    font-size: 82%;
   }
 }
 @media screen and (min-width: 2500px) {
   html {
-    font-size: 90%;
+    font-size: 92%;
   }
 }
 

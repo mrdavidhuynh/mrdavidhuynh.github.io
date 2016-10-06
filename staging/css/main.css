@@ -279,7 +279,7 @@
 
 .Works-title {
   margin: 0;
-  text-shadow: 0 0 4.5rem rgba(15,2,36,.55);
+  text-shadow: 0 0 6rem rgba(15,2,36,.6);
   font-size: 3rem;
   line-height: 1.1;
   letter-spacing: -1px
@@ -303,7 +303,7 @@
 .Works-subtitle {
   margin: 0;
   opacity: .75;
-  text-shadow: 0 0 3.5rem rgba(15,2,36,.55);
+  text-shadow: 0 0 3.5rem rgba(15,2,36,.6);
   font-size: 2.1rem;
   font-weight: normal;
 }
@@ -716,11 +716,9 @@
 /* --- role */
 
 .Role {
-  padding: 4.5rem 1.75rem;
   position: relative;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
+
 .Role::after {
   content: '';
   position: absolute;
@@ -729,22 +727,29 @@
   width: 100%;
   height: 100%;
   background: #f7f7f7;
-  z-index: -2;
-  transform: scaleX(3);
+  z-index: -1;
+}
+
+.Role-wrapper {
+  padding: 4.5rem 1.75rem;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #f7f7f7;
 }
 @media screen and (min-width: 680px) {
-  .Role {
+  .Role-wrapper {
     padding: 6rem 3rem 4.5rem;
     width: 71%;
   }
 }
 @media screen and (min-width: 960px) {
-  .Role {
+  .Role::after {
+    left: -50%;
+  }
+  .Role-wrapper {
     width: 100%;
     padding: 7.5% 5.5% 7.5% 0;
-  }
-  .Role::after {
-    left: -100%;
   }
 }
 
@@ -914,7 +919,7 @@
 }
 
 .u-routific-color {
-  color: #0b9785;
+  color: #0fa47c;
 }
 .u-routific-bgcolor {
   background-color: #0b9785;

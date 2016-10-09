@@ -961,9 +961,6 @@
 }
 
 .u-shade {
-  box-shadow: 0 1rem 5.5rem #e0e0e0;
-}
-
-.u-shade2 {
-  box-shadow: 0 1.6rem 5.5rem #d1d1d1;
+  box-shadow: 0 1rem 6rem #e5e5e5;
+  background-color: #eee;
 }

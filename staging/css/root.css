@@ -34,6 +34,26 @@ img {
   height: auto;
 }
 
+/* --- fonts */
+
+@font-face {
+  font-family: 'Akkurat';
+  src: url('../fonts/Akkurat.eot');
+  src: url('../fonts/Akkurat.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Akkurat.woff') format('woff'),
+    url('../fonts/Akkurat.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Akkurat';
+  src: url('../fonts/Akkurat-Bold.eot');
+  src: url('../fonts/Akkurat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Akkurat-Bold.woff') format('woff'),
+    url('../fonts/Akkurat-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
 /* --- headings */
 
 h1, h2, h3, h4 {
@@ -59,25 +79,5 @@ a {
 }
 
 strong {
-  font-weight: bold;
-}
-
-/* --- fonts */
-
-@font-face {
-  font-family: 'Akkurat';
-  src: url('../fonts/Akkurat.eot');
-  src: url('../fonts/Akkurat.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Akkurat.woff') format('woff'),
-    url('../fonts/Akkurat.ttf') format('truetype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Akkurat';
-  src: url('../fonts/Akkurat-Bold.eot');
-  src: url('../fonts/Akkurat-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Akkurat-Bold.woff') format('woff'),
-    url('../fonts/Akkurat-Bold.ttf') format('truetype');
   font-weight: bold;
 }

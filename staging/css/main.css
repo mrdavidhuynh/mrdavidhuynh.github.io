@@ -1,7 +1,8 @@
 /* --- body */
 
 .js-fade-load,
-.js-fade-content, {
+.js-fade-content,
+.js-fade-work {
   visibility: hidden;
 }
 
@@ -567,7 +568,7 @@
   background-size: cover;
 }
 .Info-section--sfu {
-  background: url('../img/img-info-2.png') no-repeat;
+  background: url('../img/img-info-2.jpg') no-repeat;
   background-size: cover;
 }
 .Info-section--az {

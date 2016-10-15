@@ -19,7 +19,7 @@
   <meta property="og:url" content="http://www.mrdavidhuynh.com">
   <meta property="og:image" content="http://www.mrdavidhuynh.com/img/badge-info-1.png">
   <meta property="og:description" content="Hi, I'm David. I'm a UI / Visual Designer from Vancouver, BC.">
-  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <script src="../scripts/scrollreveal.min.js"></script>
   <script>
     window.sr = ScrollReveal();
   </script>
@@ -59,7 +59,7 @@
 
   <div class="Container">
 
-    <div class="js-fade-about">
+    <div class="js-fade-load">
       <h1 class="Info-header">
         Hi<span class="Info-icon">,</span> I<div class="Info-bolt"></div>m David<span class="Info-icon">.</span>
       </h1>
@@ -68,8 +68,8 @@
       </h3>
     </div>
 
-    <div class="Info-section Info-section--vancouver js-fade-about">
-      <div class="Info-badge">
+    <div class="Info-section Info-section--vancouver js-fade-load">
+      <div class="Info-badge js-fade-load">
         <img src="../img/badge-info-1.png">
       </div>
       <div class="Info-text">
@@ -82,7 +82,7 @@
       </div>
     </div>
 
-    <div class="Info-section Info-section--sfu js-fade-about">
+    <div class="Info-section Info-section--sfu js-fade-content">
       <div class="Info-badge">
         <img src="../img/badge-info-2.png">
       </div>
@@ -96,7 +96,7 @@
       </div>
     </div>
 
-    <div class="Info-section Info-section--az js-fade-about">
+    <div class="Info-section Info-section--az js-fade-content">
       <div class="Info-badge">
         <img src="../img/badge-info-3.png">
       </div>
@@ -132,9 +132,7 @@
     </div>
   </div>
 
-  <script>
-    sr.reveal('.js-fade-about', { distance: '6rem', scale: 1, viewFactor: 0.33, duration: 500, opacity: 0 });
-  </script>
+  <script src="../scripts/scripts.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

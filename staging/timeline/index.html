@@ -58,7 +58,7 @@
 
   <div class="Container">
     <section class="Section">
-      <div class="Col Col--left">
+      <div class="Col Col--left js-fade-load">
         <h1 class="Header-title">Timeline</h1>
         <h4 class="Content-title u-tl-color">
           &mdash;
@@ -70,7 +70,7 @@
           The team I was working with at Axiom Zen was tasked with designing and engineering the app experience.
         </p>
       </div>
-      <div class="Col Col--right js-fade-cs">
+      <div class="Col Col--right js-fade-load">
         <div class="Header-frame cycle-slideshow" data-cycle-speed="750" data-cycle-timeout="2200">
           <img src="../img/tl-header2.jpg" class="cycle-slide">
           <img src="../img/tl-header1.jpg" class="cycle-slide">
@@ -79,7 +79,7 @@
     </section>
   </div>
 
-  <div class="Role">
+  <div class="Role js-fade-load">
     <div class="Container">
       <section class="Section Role-wrapper">
         <div class="Col Role-col Role-col--title">
@@ -112,7 +112,7 @@
           Visualzing all these designs improved communication between the designers, the engineers, and the client. It also allowed us to experiment with animations parallax scrolling on the home screen.
         </p>
       </div>
-      <div class="Col Col--left js-fade-cs">
+      <div class="Col Col--left js-fade-content">
         <img class="u-shade" src="../img/tl-ui.png">
       </div>
     </section>
@@ -120,7 +120,7 @@
 
   <div class="FullWrapper">
     <div class="Container">
-      <section class="Section Section--pad-top js-fade-cs">
+      <section class="Section Section--pad-top js-fade-content">
         <div class="Col u-space-top">
           <img src="../img/tl-onboard2.png">
         </div>
@@ -144,7 +144,7 @@
           Eventually, timeline.com transitioned from the landing page to a full featured web version of the Timeline product. I worked on the layout for early versions of the Timeline web interface which can be seen below.
         </p>
       </div>
-      <div class="Col Col--right js-fade-cs">
+      <div class="Col Col--right js-fade-content">
         <img class="u-shade" src="../img/tl-landing.png">
       </div>
     </section>
@@ -153,7 +153,7 @@
   <div class="FullWrapper">
     <div class="Container">
       <section class="Section">
-        <div class="Col Col--full js-fade-cs">
+        <div class="Col Col--full js-fade-content">
           <img class="u-shade" src="../img/tl-web.png">
         </div>
       </section>
@@ -170,7 +170,7 @@
           During the design and development of the iOS app, I also provided graphic design support for the Timeline team by creating marketing assets for social media and print as well as investor pitch decks.
         </p>
       </div>
-      <div class="Col Col--left js-fade-cs">
+      <div class="Col Col--left js-fade-content">
         <img src="../img/tl-graphic.png">
       </div>
     </section>
@@ -216,10 +216,8 @@
     </div>
   </div>
 
-  <script>
-    sr.reveal('.js-fade-cs', { distance: '7.5rem', scale: 1, viewFactor: 0.33, duration: 500, opacity: 0 });
-  </script>
   <script src="../scripts/scripts.js"></script>
+  <script src="../scripts/smoothscroll.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

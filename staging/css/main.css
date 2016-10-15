@@ -1,5 +1,10 @@
 /* --- body */
 
+.js-fade-load,
+.js-fade-content, {
+  visibility: none;
+}
+
 .Body {
   position: relative;
   font-family: 'Akkurat', sans-serif;
@@ -434,7 +439,7 @@
 }
 @media screen and (min-width: 960px) {
   .Works-img:hover {
-    transform: scale(.97);
+    transform: scale(.97) !important;
   }
   .Works-img--az {
     background-size: 96% auto;

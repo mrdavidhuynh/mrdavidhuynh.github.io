@@ -58,7 +58,7 @@
 
   <div class="Container">
     <section class="Section Header">
-      <div class="Col Col--left">
+      <div class="Col Col--left js-fade-load">
         <h1 class="Header-title">Axiom Zen</h1>
         <h4 class="Content-title u-az-color">
           &mdash;
@@ -70,7 +70,7 @@
           The new website was designed to reflect the growing number of impressive products and notable stories coming out of company.
         </p>
       </div>
-      <div class="Col Col--right js-fade-cs">
+      <div class="Col Col--right js-fade-load">
         <div class="Header-frame cycle-slideshow" data-cycle-speed="750" data-cycle-timeout="2200">
           <img src="../img/az-header3.jpg" class="cycle-slide">
           <img src="../img/az-header1.jpg" class="cycle-slide">
@@ -79,7 +79,7 @@
     </section>
   </div>
 
-  <div class="Role">
+  <div class="Role js-fade-load">
     <div class="Container">
       <section class="Section Role-wrapper">
         <div class="Col Role-col Role-col--title">
@@ -121,10 +121,10 @@
   <div class="FullWrapper">
     <div class="Container">
       <section class="Section">
-        <div class="Col Col--full u-space-bottom-clear js-fade-cs">
+        <div class="Col Col--full u-space-bottom-clear js-fade-content">
           <img class="u-shade" src="../img/az-home1.png">
         </div>
-        <div class="Col Col--full js-fade-cs">
+        <div class="Col Col--full js-fade-content">
           <img class="u-shade" src="../img/az-home3.png">
         </div>
       </section>
@@ -142,10 +142,10 @@
           The blog was redesigned as a news section of the site so that we could provide previews of news articles from other sites.
         </p>
         <p class="Content-body">
-          This resdesign included a page for browsing stories and a full article page.
+          This redesign included a page for browsing stories and a full article page.
         </p>
       </div>
-      <div class="Col Col--right js-fade-cs">
+      <div class="Col Col--right js-fade-content">
         <img class="u-shade" src="../img/az-blog1.png">
       </div>
     </section>
@@ -154,7 +154,7 @@
   <div class="FullWrapper">
     <div class="Container">
       <section class="Section">
-        <div class="Col Col--full js-fade-cs">
+        <div class="Col Col--full js-fade-content">
           <img class="u-shade" src="../img/az-blog2.png">
         </div>
       </section>
@@ -174,7 +174,7 @@
           They go through the product strategy behind the project and highlight the success that it resulted in.
         </p>
       </div>
-      <div class="Col Col--left js-fade-cs">
+      <div class="Col Col--left js-fade-content">
         <img class="u-shade" src="../img/az-cs2.png">
       </div>
     </section>
@@ -183,7 +183,7 @@
   <div class="FullWrapper">
     <div class="Container">
       <section class="Section">
-        <div class="Col Col--full js-fade-cs">
+        <div class="Col Col--full js-fade-content">
           <img class="u-shade" src="../img/az-cs1.png">
         </div>
       </section>
@@ -192,10 +192,10 @@
 
   <div class="Container">
     <section class="Section">
-      <div class="Col Col--left js-fade-cs">
+      <div class="Col Col--left js-fade-content">
         <img class="u-shade" src="../img/az-about.png">
       </div>
-      <div class="Col Col--right js-fade-cs">
+      <div class="Col Col--right js-fade-content">
         <img class="u-shade" src="../img/az-contact.png">
       </div>
     </section>
@@ -241,10 +241,8 @@
     </div>
   </div>
 
-  <script>
-    sr.reveal('.js-fade-cs', { distance: '7.5rem', scale: 1, viewFactor: 0.33, duration: 500, opacity: 0 });
-  </script>
   <script src="../scripts/scripts.js"></script>
+  <script src="../scripts/smoothscroll.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

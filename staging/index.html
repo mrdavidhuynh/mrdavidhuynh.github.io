@@ -59,8 +59,8 @@
 
   <div class="Container">
 
-    <div class="Works-preview Works-preview--az">
-      <a class="Works-description Works-description--az js-fade-work" href="./axiomzen">
+    <div class="Works-preview Works-preview--az js-fade-load">
+      <a class="Works-description Works-description--az js-fade-load" href="./axiomzen">
         <h1 class="Works-title">
           Axiom Zen
         </h1>
@@ -69,12 +69,12 @@
         </h2>
       </a>
       <a class="Works-frame Works-frame--az u-az-bgcolor" href="./axiomzen">
-        <div class="Works-img Works-img--az js-fade-work" style="background-image: url('img/home-az.png')"></div>
+        <div class="Works-img Works-img--az js-fade-load" style="background-image: url('img/home-az.png')"></div>
         <div class="Works-label Works-label--az Content-label">CASE STUDY 01</div>
       </a>
     </div>
 
-    <div class="Works-preview Works-preview--tl">
+    <div class="Works-preview Works-preview--tl js-fade-load">
       <a class="Works-description Works-description--tl js-fade-work" href="./timeline">
         <h1 class="Works-title">
           Timeline
@@ -84,12 +84,12 @@
         </h2>
       </a>
       <a class="Works-frame Works-frame--tl u-tl-bgcolor" href="./timeline">
-        <div class="Works-img Works-img--tl" style="background-image: url('img/home-tl.png')"></div>
+        <div class="Works-img Works-img--tl js-fade-load" style="background-image: url('img/home-tl.png')"></div>
         <div class="Works-label Works-label--tl Content-label">CASE STUDY 02</div>
       </a>
     </div>
 
-    <div class="Works-preview Works-preview--plume">
+    <div class="Works-preview Works-preview--plume js-fade-load">
       <a class="Works-description Works-description--plume js-fade-work" href="./plume">
         <h1 class="Works-title">
           Plume WiFi
@@ -104,7 +104,7 @@
       </a>
     </div>
 
-    <div class="Works-preview Works-preview--routific">
+    <div class="Works-preview Works-preview--routific js-fade-load">
       <a class="Works-description Works-description--routific js-fade-work" href="./routific">
         <h1 class="Works-title">
           Routific
@@ -119,7 +119,7 @@
       </a>
     </div>
 
-    <div class="Works-preview Works-preview--ht">
+    <div class="Works-preview Works-preview--ht js-fade-load">
       <a class="Works-description Works-description--ht js-fade-work" href="./hammer-and-tusk">
         <h1 class="Works-title Works-title-sm">
           Hammer &amp; Tusk
@@ -153,9 +153,7 @@
     </div>
   </div>
 
-  <script>
-    sr.reveal('.js-fade-work', { distance: '6rem', scale: 1, viewFactor: 1, duration: 750, opacity: 0 });
-  </script>
+  <script src="scripts/scripts.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

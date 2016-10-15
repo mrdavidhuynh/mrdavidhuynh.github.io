@@ -58,7 +58,7 @@
 
   <div class="Container">
     <section class="Section Header">
-      <div class="Col Col--left">
+      <div class="Col Col--left js-fade-load">
         <h1 class="Header-title Header-title--sm">Hammer &amp; Tusk</h1>
         <h4 class="Content-title u-ht-color">
           &mdash;
@@ -70,7 +70,7 @@
           I worked with the team to create a full visual identity for the company which included the design of this website.
         </p>
       </div>
-      <div class="Col Col--right js-fade-cs">
+      <div class="Col Col--right js-fade-load">
         <div class="Header-frame cycle-slideshow" data-cycle-speed="750" data-cycle-timeout="2200">
           <img src="../img/ht-header1.jpg" class="cycle-slide">
           <img src="../img/ht-header2.jpg" class="cycle-slide">
@@ -79,7 +79,7 @@
     </section>
   </div>
 
-  <div class="Role">
+  <div class="Role js-fade-load">
     <div class="Container">
       <section class="Section Role-wrapper">
         <div class="Col Role-col Role-col--title">
@@ -120,13 +120,13 @@
   <div class="FullWrapper">
     <div class="Container">
       <section class="Section">
-        <div class="Col Col--full u-space-bottom-clear js-fade-cs">
+        <div class="Col Col--full u-space-bottom-clear js-fade-content">
           <img src="../img/ht-home1.jpg">
         </div>
-        <div class="Col Col--full u-space-bottom-clear js-fade-cs">
+        <div class="Col Col--full u-space-bottom-clear js-fade-content">
           <img class="u-shade" src="../img/ht-newsletter.png">
         </div>
-        <div class="Col Col--full js-fade-cs">
+        <div class="Col Col--full js-fade-content">
           <img class="u-shade" src="../img/ht-brand.png">
         </div>
       </section>
@@ -135,10 +135,10 @@
 
   <div class="Container">
     <section class="Section">
-      <div class="Col Col--left js-fade-cs">
+      <div class="Col Col--left js-fade-content">
         <img class="u-shade" src="../img/ht-blog.png">
       </div>
-      <div class="Col Col--right js-fade-cs">
+      <div class="Col Col--right js-fade-content">
         <img class="u-shade" src="../img/ht-podcast.png">
       </div>
     </section>
@@ -184,10 +184,8 @@
     </div>
   </div>
 
-  <script>
-    sr.reveal('.js-fade-cs', { distance: '7.5rem', scale: 1, viewFactor: 0.33, duration: 500, opacity: 0 });
-  </script>
   <script src="../scripts/scripts.js"></script>
+  <script src="../scripts/smoothscroll.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

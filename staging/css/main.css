@@ -2,7 +2,7 @@
 
 .js-fade-load,
 .js-fade-content, {
-  visibility: none;
+  visibility: hidden;
 }
 
 .Body {

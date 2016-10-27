@@ -1,8 +1,8 @@
 /* --- body */
 
 .js-fade-load,
-.js-fade-content,
-.js-fade-work {
+.js-fade-load2,
+.js-fade-content {
   visibility: hidden;
 }
 
@@ -434,7 +434,6 @@
   height: 100%;
   margin: auto;
   background-repeat: no-repeat;
-  transition: transform .3s !important;
 }
 .Works-img--az {
   background-position: center;
@@ -475,11 +474,6 @@
   }
 }
 @media screen and (min-width: 960px) {
-  .Works-img:hover {
-    transform: scale(.98) !important;
-    -webkit-transform: scale(.98) !important;
-    -ms-transform: scale(.98) !important;
-  }
   .Works-img--az {
     background-size: 96% auto;
   }

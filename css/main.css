@@ -325,7 +325,7 @@
   margin: 0;
   text-shadow: 0 0 3rem rgba(15,2,36,0.45);
   font-size: 3rem;
-  line-height: 1.1;
+  line-height: 1.0;
   letter-spacing: -1px
 }
 @media screen and (min-width: 680px) {

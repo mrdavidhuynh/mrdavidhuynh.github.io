@@ -322,7 +322,7 @@
 }
 
 .Works-title {
-  margin: 0;
+  margin: 0.5rem 0 0;
   text-shadow: 0 0 3rem rgba(15,2,36,0.45);
   font-size: 3rem;
   line-height: 1.0;

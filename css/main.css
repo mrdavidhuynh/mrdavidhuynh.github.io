@@ -295,10 +295,9 @@
 @media screen and (min-width: 960px) {
   .Works-description {
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     width: auto;
     max-width: 100%;
-    cursor: pointer;
     padding-left: 0;
     pointer-events: none;
     top: 32%;
@@ -368,7 +367,26 @@
   position: relative;
   margin: 0 auto;
   height: 17rem;
-  cursor: pointer;
+}
+.Works-frame:hover::before {
+  opacity: .5;
+}
+.Works-frame:hover > .Works-label {
+  opacity: .75;
+}
+.Works-frame::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  margin: auto;
+  background-color: #3a075d;
+  opacity: 0;
+  z-index: 3;
+  transition: opacity .25s;
 }
 .Works-frame::after {
   display: block;
@@ -434,6 +452,7 @@
   height: 100%;
   margin: auto;
   background-repeat: no-repeat;
+  transition: transform .3s;
 }
 .Works-img--az {
   background-position: center;
@@ -507,6 +526,7 @@
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   color: #CDAEFF;
+  transition: opacity .25s;
 }
 @media screen and (min-width: 960px) {
   .Works-label {

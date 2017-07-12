@@ -369,10 +369,10 @@
   height: 17rem;
 }
 .Works-frame:hover::before {
-  opacity: .5;
+  opacity: .3333;
 }
 .Works-frame:hover > .Works-label {
-  opacity: .75;
+  opacity: 1;
 }
 .Works-frame::before {
   display: block;

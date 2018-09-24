@@ -302,7 +302,7 @@
 }
 
 .Works-title {
-  margin: 1rem 0 0.2rem;
+  margin: 1rem 0 1rem;
   text-shadow: 0 0 2rem rgba(15,2,36,0.5);
   font-size: 3rem;
   line-height: 1.05;
@@ -310,7 +310,7 @@
 }
 @media screen and (min-width: 680px) {
   .Works-title {
-    font-size: 3.6rem;
+    font-size: 3.4rem;
   }
 }
 @media screen and (min-width: 960px) {
@@ -327,12 +327,12 @@
 }
 @media screen and (min-width: 680px) {
   .Works-subtitle {
-    font-size: 2.6rem
+    font-size: 2.4rem
   }
 }
 @media screen and (min-width: 960px) {
   .Works-subtitle {
-    font-size: 3rem
+    font-size: 2.6rem
   }
 }
 
@@ -341,7 +341,7 @@
   width: 100%;
   position: relative;
   margin: 0 auto;
-  height: 18rem;
+  height: 15rem;
 }
 .Works-frame:hover::before {
   opacity: .3333;
@@ -374,6 +374,11 @@
   background: url('../img/shadow-wide.png') bottom center no-repeat;
   background-size: contain;
   z-index: -1;
+}
+@media screen and (min-width: 410px) {
+  .Works-frame {
+    height: 19rem;
+  }
 }
 @media screen and (min-width: 680px) {
   .Works-frame {

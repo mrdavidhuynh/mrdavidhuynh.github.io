@@ -346,7 +346,7 @@
   height: 15rem;
 }
 .Works-frame:hover::before {
-  opacity: .3333;
+  opacity: .25;
 }
 .Works-frame:hover > .Works-label {
   opacity: 1;

@@ -119,9 +119,9 @@
   transition: transform .3s;
 }
 .Nav-logo:hover img {
-  transform: scale(1.05) translate(0,-.3rem);
-  -webkit-transform: scale(1.05) translate(0,-.3rem);
-  -ms-transform: scale(1.05) translate(0,-.3rem);
+  transform: scale(1.1) translate(0,-.3rem);
+  -webkit-transform: scale(1.1) translate(0,-.3rem);
+  -ms-transform: scale(1.1) translate(0,-.3rem);
 }
 .Nav-logo:hover div {
   transform: scale(.8);
@@ -244,17 +244,14 @@
 /* --- Works */
 
 .Works-preview {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  position: relative;
   width: 100%;
   margin-bottom: 6rem;
 }
 @media screen and (min-width: 680px) {
   .Works-preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -267,13 +264,10 @@
 }
 @media screen and (min-width: 960px) {
   .Works-preview {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
     margin-bottom: 19%;
   }
-  .Works-preview--az, .Works-preview--plume, .Works-preview--ht  {
-    -webkit-box-orient: horizontal
+  .Works-preview--reverse  {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -287,77 +281,60 @@
 }
 @media screen and (min-width: 680px) {
   .Works-description {
-    width: 57%;
-    padding-left: 14%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: auto;
+    max-width: 100%;
+    margin-left: 14%;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 960px) {
   .Works-description {
-    position: absolute;
-    z-index: 5;
-    width: auto;
-    max-width: 100%;
-    padding-left: 0;
-    pointer-events: none;
-    top: 32%;
-    left: 0;
+    margin-left: 7%;
   }
-  .Works-description--tl {
-    top: 52%;
-    left: 28.5%;
-  }
-  .Works-description--plume {
-    left: 28.5%;
-    top: 44%;
-  }
-  .Works-description--routific {
-    top: 52%;
-    left: 71%;
-  }
-  .Works-description--ht {
-    top: 36%
+
+  .Works-description--reverse {
+    margin-left: 0;
+    text-align: right;
   }
 }
 
 .Works-title {
-  margin: 1rem 0 0;
-  text-shadow: 0 0 3rem rgba(15,2,36,0.45);
+  margin: 1rem 0 0.2rem;
+  text-shadow: 0 0 2rem rgba(15,2,36,0.5);
   font-size: 3rem;
   line-height: 1.05;
   letter-spacing: -1px
 }
 @media screen and (min-width: 680px) {
   .Works-title {
-    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    font-size: 3.4rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Works-title {
-    font-size: 6.5rem;
-  }
-  .Works-title-sm {
-    font-size: 5.2rem;
+    margin-bottom: 1rem;
+    font-size: 4.8rem;
   }
 }
 
 .Works-subtitle {
   margin: 0;
-  opacity: .75;
-  text-shadow: 0 0 3.5rem rgba(15,2,36,0.5);
   font-size: 2.1rem;
   font-weight: normal;
+  opacity: .75;
 }
 @media screen and (min-width: 680px) {
   .Works-subtitle {
-    font-size: 2.6rem
+    font-size: 2.3rem
   }
 }
 @media screen and (min-width: 960px) {
   .Works-subtitle {
-    margin: 0;
-    opacity: 1;
-    font-size: 3.2rem
+    font-size: 2.6rem
   }
 }
 
@@ -366,10 +343,10 @@
   width: 100%;
   position: relative;
   margin: 0 auto;
-  height: 17rem;
+  height: 15rem;
 }
 .Works-frame:hover::before {
-  opacity: .3333;
+  opacity: .25;
 }
 .Works-frame:hover > .Works-label {
   opacity: 1;
@@ -392,7 +369,7 @@
   display: block;
   content: '';
   position: absolute;
-  bottom: -12.5%;
+  bottom: -15.5%;
   left: -16%;
   width: 132%;
   height: 100%;
@@ -402,43 +379,36 @@
 }
 @media screen and (min-width: 410px) {
   .Works-frame {
-    height: 22rem
+    height: 19rem;
   }
 }
 @media screen and (min-width: 680px) {
   .Works-frame {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
     width: 43%;
     max-width: 43%;
     margin: 0;
   }
   .Works-frame::after {
-    bottom: -9.5%;
+    bottom: -12.5%;
   }
 }
 @media screen and (min-width: 960px) {
-  .Works-frame--az, .Works-frame--plume, .Works-frame--ht {
-    width: 57.12%;
-    max-width: 57.12%;
+  .Works-frame {
+    width: 57.14%;
+    max-width:  57.14%;
     height: 32rem;
-    margin-left: 14.2%;
   }
-  .Works-frame--plume {
-    margin-left: 0;
-  }
-  .Works-frame--ht {
-    padding-top: 38%;
-  }
-  .Works-frame--tl, .Works-frame--routific {
+  .Works-frame--tall {
     width: 42.85%;
     max-width: 42.85%;
+    margin-left: 14.29%;
     height: 43rem;
-    margin-right: 14.5%;
   }
-  .Works-frame::after {
-    bottom: -7.4%;
-  }
-  .Works-frame--az::after, .Works-frame--plume::after, .Works-frame--ht::after {
-    bottom: -12.5%;
+  .Works-frame--tall::after {
+    bottom: -7%;
   }
 }
 
@@ -456,7 +426,7 @@
 }
 .Works-img--az {
   background-position: center;
-  background-size: 96% auto;
+  background-size: 80% auto;
   height: 90%;
 }
 .Works-img--tl {
@@ -475,9 +445,9 @@
   background-size: cover;
   height: 100%
 }
-.Works-img--ht {
+.Works-img--ck {
   top: 0;
-  background-position: center;
+  background-position: bottom;
   background-size: 80% auto;
   height: 100%;
 }
@@ -491,10 +461,13 @@
   .Works-img--plume {
     background-size: 120% auto;
   }
+  .Works-img--ck {
+    background-size: 100% auto;
+  }
 }
 @media screen and (min-width: 960px) {
   .Works-img--az {
-    background-size: 96% auto;
+    background-size: 95% auto;
   }
   .Works-img--tl {
     background-size: 77% auto;
@@ -509,9 +482,8 @@
   .Works-img--routific {
     height: 94%
   }
-  .Works-img--ht {
-    background-size: 75% auto;
-    margin-bottom: 1rem;
+  .Works-img--ck {
+    background-size: 95% auto;
   }
 }
 
@@ -521,11 +493,12 @@
   top: 45%;
   width: 30rem;
   margin: auto;
-  opacity: .3333;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   color: #CDAEFF;
+  opacity: 0.5;
+  font-weight: bold;
   transition: opacity .25s;
 }
 @media screen and (min-width: 960px) {
@@ -533,7 +506,7 @@
     top: 48%;
     left: -17.6rem;
   }
-  .Works-label--az, .Works-label--ht, .Works-label--tl {
+  .Works-label--reverse {
     left:  auto;
     right: -17.6rem;
     transform: rotate(90deg);
@@ -755,6 +728,12 @@
   line-height: 1.5;
   color: #404040;
 }
+.Content-body a {
+  border-bottom: 2px solid #f0f0f0;
+}
+.Content-body a:hover {
+  border-bottom: 2px solid #e0e0e0;
+}
 .Content-body:first-of-type {
   margin-top: .5rem;
 }
@@ -865,6 +844,7 @@
   margin: 0 auto;
   position: relative;
   padding-top: 58%;
+  background-color: #f2f2f2;
 }
 @media screen and (min-width: 960px) {
   .Video  {
@@ -992,10 +972,10 @@
 }
 
 .u-az-color {
-  color: #d43772;
+  color: #e94381;
 }
 .u-az-bgcolor {
-  background-color: #d43772;
+  background-color: #e94381;
 }
 
 .u-tl-color {
@@ -1019,11 +999,11 @@
   background-color: #0b9785;
 }
 
-.u-ht-color {
-  color: #8334b0;
+.u-ck-color {
+  color: #ffa5f2;
 }
-.u-ht-bgcolor {
-  background-color: #8334b0;
+.u-ck-bgcolor {
+  background-color: #ffa5f2;
 }
 
 .u-space-bottom-clear {

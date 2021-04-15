@@ -19,7 +19,7 @@ sr.reveal('.js-fade-load2',
 
 sr.reveal('.js-fade-content',
 {
-  distance: '7.5rem',
+  distance: '4.5rem',
   scale: 1,
   viewFactor: 0.33,
   opacity: 0
